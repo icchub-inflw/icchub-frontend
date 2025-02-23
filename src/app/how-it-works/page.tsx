@@ -1,11 +1,10 @@
-import HeroBanner from "@/components/ui/hero-banner";
 import HowItWorksBanner from "@/components/ui/how-it-works";
 import Image from "next/image";
 
-export default function Home() {
+export default function HowItWorks() {
   return (
     <div className="">
-     <HeroBanner />
+           <HowItWorksBanner />
     </div>
   );
 }
