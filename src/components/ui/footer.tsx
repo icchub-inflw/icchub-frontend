@@ -28,7 +28,7 @@ export default function Footer() {
         {/* Center Section - Contact Us */}
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold">Contact Us</h3>
-          <p className="text-sm text-gray-400">Have questions? We're here to help.</p>
+          <p className="text-sm text-gray-400">{`Have questions? We're here to help.`}</p>
           <Link href="/contact" className="text-blue-400 hover:text-white mt-2 block">Get in Touch</Link>
         </div>
 

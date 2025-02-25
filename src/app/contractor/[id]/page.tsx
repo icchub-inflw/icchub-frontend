@@ -5,7 +5,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Mail, Phone, Dot } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Next } from "@/icons/next";
 import { Previous } from "@/icons/previous";
 
@@ -31,7 +31,7 @@ const projectImages = [
 export default function ContractorProfile() {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
-  const [lightboxImage, setLightboxImage] = useState(null);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   const itemsPerPage = 3;
 
@@ -131,9 +131,9 @@ export default function ContractorProfile() {
             AI-Generated Summary
           </h2>
           <p className="mt-2 text-gray-700 font-body">
-            This section provides a summary of online reviews. The AI-generated
+           {`This section provides a summary of online reviews. The AI-generated
             content will summarize key insights and highlight the contractor's
-            strengths in 3-5 sentences.
+            strengths in 3-5 sentences.`}
           </p>
         </div>
       </div>
@@ -182,7 +182,7 @@ export default function ContractorProfile() {
                 transition={{ duration: 0.5 }}
                 className="text-gray-700 text-center text-2xl font-body"
               >
-                "{quotes[currentQuoteIndex]}"
+                {`"{quotes[currentQuoteIndex]}"`}
               </motion.div>
             </AnimatePresence>
           </div>

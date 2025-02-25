@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -37,7 +36,7 @@ export default function Navbar({ children }: NavbarProps) {
           
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-blue-100 text-black hover:bg-blue-200 font-body text-lg">Let's Get Started</Button>
+            <Button className="bg-blue-100 text-black hover:bg-blue-200 font-body text-lg">{`Let's Get Started`}</Button>
           </div>
 
           {/* Mobile Menu (Hamburger Icon) */}
@@ -61,7 +60,7 @@ export default function Navbar({ children }: NavbarProps) {
                 <Link href="/" onClick={() => setIsOpen(false)} className={`hover:text-blue-500 ${pathname === '#home' ? 'border-b-2 border-blue-500' : ''}`}>Home</Link>
                 <Link href="/how-it-works" onClick={() => setIsOpen(false)} className={`hover:text-blue-500 ${pathname === '#how-it-works' ? 'border-b-2 border-blue-500' : ''}`}>How it Works</Link>
                 <Link href="/faq" onClick={() => setIsOpen(false)} className={`hover:text-blue-500 ${pathname === '#faq' ? 'border-b-2 border-blue-500' : ''}`}>FAQ</Link>
-                <Button className="bg-blue-100 text-black hover:bg-blue-200 mt-4 w-full">Let's Get Started</Button>
+                <Button className="bg-blue-100 text-black hover:bg-blue-200 mt-4 w-full">{`Let's Get Started`}</Button>
               </div>
             </SheetContent>
           </Sheet>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -41,7 +41,6 @@ const slides = [
 
 export default function HowItWorksBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
