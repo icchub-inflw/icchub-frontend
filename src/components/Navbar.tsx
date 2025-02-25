@@ -36,7 +36,8 @@ export default function Navbar({ children }: NavbarProps) {
           
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-blue-100 text-black hover:bg-blue-200 font-body text-lg">{`Let's Get Started`}</Button>
+            {/* <Button className="bg-blue-100 text-black hover:bg-blue-200 font-body text-lg">{`Let's Get Started`}</Button> */}
+            <Link className="px-6 py-3 bg-blue-100 text-black hover:bg-blue-200 font-body text-lg rounded-md" href="/get-started">{`Let's Get Started`}</Link>
           </div>
 
           {/* Mobile Menu (Hamburger Icon) */}
