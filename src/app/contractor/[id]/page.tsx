@@ -182,7 +182,7 @@ export default function ContractorProfile() {
                 transition={{ duration: 0.5 }}
                 className="text-gray-700 text-center text-2xl font-body"
               >
-                {`"{quotes[currentQuoteIndex]}"`}
+                "{quotes[currentQuoteIndex]}"
               </motion.div>
             </AnimatePresence>
           </div>
