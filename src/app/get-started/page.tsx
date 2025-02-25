@@ -24,9 +24,9 @@ export default function StepProgressChat() {
   };
 
   return (
-    <div className="flex h-[80vh]">
+    <div className="flex h-[80vh] flex-col md:flex-row">
       {/* Sidebar */}
-      <div className="w-1/4 bg-blue-100 p-6 flex flex-col gap-4">
+      <div className="md:w-1/4 bg-blue-100 p-6 flex flex-col gap-4">
         {steps.map((step, index) => (
           <div
             key={index}
