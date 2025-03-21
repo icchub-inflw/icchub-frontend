@@ -6,7 +6,7 @@ import { Facebook, Instagram, Youtube } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-8 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 text-center md:grid-cols-3 gap-8 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 text-center sm:text-left md:grid-cols-3 gap-8 items-start">
         {/* Left Section - Brand & Legal Links */}
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-xl font-bold">ICCHub.ai</h2>

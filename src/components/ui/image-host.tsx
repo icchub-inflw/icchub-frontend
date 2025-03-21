@@ -14,7 +14,7 @@ export default function ImageHost({
   height = 600,
 }: ImageHostProps) {
   return (
-    <div className="relative w-full max-w-xl mx-auto">
+    <div className="relative w-full max-w-3xl mx-auto">
       <Image
         src={src}
         alt={alt}

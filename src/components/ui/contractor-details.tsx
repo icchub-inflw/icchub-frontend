@@ -1,0 +1,56 @@
+'use client';
+
+import { Benefit } from '@/icons/benefit';
+import { CheckList } from '@/icons/checklist';
+import { JoinUs } from '@/icons/join-us';
+import { motion } from 'framer-motion';
+
+const contractorDetails = [
+  { title: "Join Us", description: "Become part of a trusted network of skilled contractors and grow your business with us." , icon: <JoinUs />},
+  { title: "Key Eligibility Criteria", description: "Licensed professionals with proven experience in home renovations, architecture, or interior design.", icon: <CheckList /> },
+  { title: "Key Benefits", description: "Access to exclusive projects, seamless client matching, and business growth opportunities.", icon: <Benefit /> },
+];
+
+export default function ContractorDetailsBanner() {
+  return (
+    <section id={'details'}  className="flex flex-col items-center py-12 px-6 bg-blue-100 w-full mt-16">
+      <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading">Details for Contractors</h2>
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 w-full max-w-6xl">
+        {contractorDetails.map((detail, index) => (
+          <motion.div
+            key={index}
+            className="bg-white rounded-lg shadow-lg p-6 md:w-2/3 mx-auto flex flex-col md:flex-row gap-8 items-start"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className='bg-blue-100 p-3 rounded'>{detail.icon}</div>
+            <div>
+               {/* <h3 className="text-2xl font-semibold text-gray-900 font-heading">{detail.title}</h3> */}
+               <motion.h3 
+                className="text-2xl font-semibold text-gray-900 font-heading relative inline"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                {detail.title}
+                <motion.div 
+                //   className="absolute left-0 top-10 bottom-0 w-[70%] h-[2px] bg-gray-300"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  transition={{ duration: 0.7, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  style={{ transformOrigin: "left" }}
+                />
+              </motion.h3>
+            <p className="text-gray-700 mt-4 font-body">{detail.description}</p> 
+            </div>
+            
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+}

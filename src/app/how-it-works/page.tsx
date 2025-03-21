@@ -1,9 +1,11 @@
-import HowItWorksBanner from "@/components/ui/how-it-works";
+import AnimatedFourRowBanner from "@/components/ui/four-row";
+// import HowItWorksBanner from "@/components/ui/how-it-works";
 
 export default function HowItWorks() {
   return (
     <div className="">
-      <HowItWorksBanner />
+      {/* <HowItWorksBanner /> */}
+      <AnimatedFourRowBanner />
     </div>
   );
 }
