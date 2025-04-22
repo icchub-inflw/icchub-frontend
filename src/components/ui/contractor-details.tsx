@@ -1,6 +1,5 @@
 "use client";
 
-import { Benefit } from "@/icons/benefit";
 import { Check, X } from "lucide-react";
 import { CheckList } from "@/icons/checklist";
 import { JoinUs } from "@/icons/join-us";
@@ -9,8 +8,13 @@ import Link from "next/link";
 
 const contractorDetails = [
   {
+    id: 1,
     title: "Inclusion criteria",
-    listIcon: <span className="text-green-800 bg-green-300 inline-block rounded-full p-1"><Check className="h-4 w-4" /></span>,
+    listIcon: (
+      <span className="text-green-800 bg-green-300 inline-block rounded-full p-1">
+        <Check className="h-4 w-4" />
+      </span>
+    ),
     points: [
       "Insurance protection ",
       "Relevant certifications for given trade ",
@@ -22,8 +26,13 @@ const contractorDetails = [
     icon: <JoinUs />,
   },
   {
+    id: 2,
     title: "Exclusion criteria",
-    listIcon: <span className="text-red-800 bg-red-300 inline-block rounded-full p-1"><X className="h-4 w-4" /></span>,
+    listIcon: (
+      <span className="text-red-800 bg-red-300 inline-block rounded-full p-1">
+        <X className="h-4 w-4" />
+      </span>
+    ),
     points: [
       "Few or limited online reviews",
       "Poor presence online",
@@ -99,7 +108,7 @@ export default function ContractorDetailsBanner() {
                 <ul>
                   {detail.points.map((point) => {
                     return (
-                      <li className="flex gap-3 my-2">
+                      <li key={point} className="flex gap-3 my-2">
                         <span>{detail.listIcon}</span> {point}
                       </li>
                     );
