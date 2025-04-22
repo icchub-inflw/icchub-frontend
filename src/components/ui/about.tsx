@@ -6,7 +6,7 @@ import ImageHost from "./image-host";
 
 export default function OurVisionBanner() {
   return (
-    <section id={'about'}  className="flex flex-col md:flex-row items-center justify-center py-12 w-full mx-auto max-w-7xl gap-10 bg-white">
+    <section id={'about'}  className="flex flex-col md:flex-row items-center justify-center py-12 w-full mx-auto max-w-7xl gap-10 bg-white scroll-mt-24">
       {/* Left Column - Text Content */}
 
       <motion.div

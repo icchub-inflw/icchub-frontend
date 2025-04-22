@@ -7,7 +7,9 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 
-const faqs = [
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+const homeownerFaqs = [
   {
     question: "How exactly does ICCHub.ai process work?",
     answer:
@@ -68,24 +70,79 @@ const faqs = [
   },
 ];
 
+const contractorFaqs = [
+  {
+    question: "Who can use the platform",
+    answer:
+      "ICCHub.ai pulls in contractors at the subcontractor level (i.e., tradespersons who specialize in a particular area of work (e.g., plumbing)). We then leverage AI to create teams with the skill sets needed to meet homeowner project normalizeRepeatedSlashes.",
+  },
+  {
+    question: "How do I get leads?",
+    answer:
+      "We ask homeowners to describe their project as best as they can, asking additional prompts to ensure we get the preliminary detail you need! We then scan our contractor network, to assess the availability and alignment of skill sets required for the job. Homeowners gets the opportunity to review your profile and decide on whether to schedule a meeting with you in person (no initial bids needed)",
+  },
+  {
+    question: "How do I get paid?",
+    answer:
+      "First encounter: homeowners will be required to pay for your initial site visit, a fee of which will be reduced from the total project cost to be paid. Project downpayment & milestones: once a contract is signed between both parties to begin the work, an initial down payment will be paid, followed by a final payment at the completion of the project. ICCHub.ai will support you both in drafting a renovation project contract and securely set up your payment plan.",
+  },
+  {
+    question: "How do I join the contractor network",
+    answer:
+      "We ask that you complete the contractors’ applications through which your professional background will be assessed. Provided you meet all of the eligibility requirements you will be invited into the network!",
+  },
+  {
+    question: "What are the fees for using the platform",
+    answer:
+      "Monthly payment: contractors are expected to pay a fee to be featured on the platform and paired with projects. Transaction fees: A small transaction fee will be made for each processed payment within the platform. Please note the transaction fees will be waived for your first project within the platform!",
+  },
+];
+
 export default function FAQAccordion() {
   return (
-    <section id={'faq'} className="flex flex-col items-center py-12 px-6 bg-blue-100 w-full">
+    <section
+      id={"faq"}
+      className="flex flex-col items-center py-12 px-6 bg-gray-100 w-full scroll-mt-24"
+    >
       <h2 className="text-2xl font-bold text-gray-900 mb-6 font-heading text-4xl">
-        FAQ
+        FAQs
       </h2>
-      <Accordion
-        type="single"
-        collapsible
-        className="w-full max-w-4xl bg-white px-8 rounded-lg"
-      >
-        {faqs.map((faq, index) => (
-          <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger>{faq.question}</AccordionTrigger>
-            <AccordionContent>{faq.answer}</AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
+      <Tabs defaultValue="account" className="w-full">
+        <TabsList>
+          <TabsTrigger value="account">For Homeowners</TabsTrigger>
+          <TabsTrigger value="password">For Contractors</TabsTrigger>
+        </TabsList>
+        <TabsContent value="account">
+          {/* <h1 className="text-center text-3xl">{" Homeowner FAQs"}</h1> */}
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full max-w-4xl bg-white px-8 rounded-lg mx-auto"
+          >
+            {homeownerFaqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>{faq.answer}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </TabsContent>
+        <TabsContent value="password">
+          {/* <h1>{" Contractor FAQs"}</h1> */}
+          <Accordion
+            type="single"
+            collapsible
+            className="w-full max-w-4xl bg-white px-8 rounded-lg mx-auto"
+          >
+            {contractorFaqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>{faq.answer}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </TabsContent>
+      </Tabs>
     </section>
   );
 }

@@ -314,7 +314,7 @@ export default function Navbar({ children }: NavbarProps) {
 
           <div className="hidden md:flex gap-6 text-lg">
             <Link
-              href="/about"
+              href="/#about"
               className={`hover:text-blue-500 ${
                 pathname === "/about" || activeSection === "/about"
                   ? "border-b-2 border-blue-500"
@@ -324,7 +324,7 @@ export default function Navbar({ children }: NavbarProps) {
               About
             </Link>
             <Link
-              href="/how-it-works"
+              href="#how-it-works"
               className={`hover:text-blue-500 ${
                 pathname === "/how-it-works" ||
                 activeSection === "/how-it-works"
@@ -335,7 +335,7 @@ export default function Navbar({ children }: NavbarProps) {
               How it Works
             </Link>
             <Link
-              href="/services"
+              href="/#services"
               className={`hover:text-blue-500 ${
                 pathname === "/services" || activeSection === "/services"
                   ? "border-b-2 border-blue-500"
@@ -345,7 +345,7 @@ export default function Navbar({ children }: NavbarProps) {
               Services
             </Link>
             <Link
-              href="/details-for-contractors"
+              href="/#details-for-contractors"
               className={`hover:text-blue-500 ${
                 pathname === "/details-for-contractors" ||
                 activeSection === "/details"
@@ -356,7 +356,7 @@ export default function Navbar({ children }: NavbarProps) {
               Details for Contractors
             </Link>
             <Link
-              href="/faq"
+              href="/#faq"
               className={`hover:text-blue-500 ${
                 pathname === "/faq" || activeSection === "/faq"
                   ? "border-b-2 border-blue-500"

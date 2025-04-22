@@ -45,7 +45,7 @@ const services = [
 
 export default function ServicesBanner() {
   return (
-    <section id={'services'}  className="flex flex-col items-center py-12 px-6 w-full">
+    <section id={'services'}  className="flex flex-col items-center py-12 px-6 w-full scroll-mt-24">
       <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading">
         Our Services
       </h2>

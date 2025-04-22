@@ -73,7 +73,7 @@ const steps = [
 
 export default function AnimatedStepsRow() {
   return (
-    <section id={'how-it-works'} className="flex flex-col py-12 px-4 sm:px-6 bg-gray-100 w-full">
+    <section id={'how-it-works'} className="flex flex-col py-12 px-4 sm:px-6 bg-gray-100 w-full scroll-mt-24">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading items-start">
           Our Approach
