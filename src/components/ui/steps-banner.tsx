@@ -7,7 +7,7 @@ import { ChatBubble } from "@/icons/chat-bubble";
 import { Team } from "@/icons/team";
 import { Calendar } from "@/icons/calendar";
 import { Agree } from "@/icons/agree";
-import { Button } from "./button";
+// import { Button } from "./button";
 import Link from "next/link";
 
 // 1) Begin your chat with inflw. You will be asked a series of pre-screening questions about your project
