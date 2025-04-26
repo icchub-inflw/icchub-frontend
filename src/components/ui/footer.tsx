@@ -10,13 +10,13 @@ export default function Footer() {
         {/* Left Section - Brand & Legal Links */}
         <div className="flex flex-col items-center md:items-start">
           <h2 className="text-xl font-bold">ICCHub.ai</h2>
-          <p className="text-sm text-gray-400 mt-2">Empowering your renovation projects with AI.</p>
+          <p className="text-sm text-gray-400 mt-2">Simplifying your next renovation project with inflw.</p>
           <div className="mt-4 text-sm">
             <Link href="/" className="text-gray-300 hover:text-white">Home</Link>
             <span className="mx-2">|</span>
-            <Link href="/how-it-works" className="text-gray-300 hover:text-white">How It Works</Link>
+            <Link href="/#how-it-works" className="text-gray-300 hover:text-white">How It Works</Link>
             <span className="mx-2">|</span>
-            <Link href="/faq" className="text-gray-300 hover:text-white">FAQ</Link>
+            <Link href="/#faq" className="text-gray-300 hover:text-white">FAQ</Link>
           </div>
           <div className="mt-4 text-sm">
             <Link href="/privacy-policy" className="text-gray-300 hover:text-white">Privacy Policy</Link>

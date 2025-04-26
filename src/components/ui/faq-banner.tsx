@@ -105,7 +105,7 @@ export default function FAQAccordion() {
       className="flex flex-col items-center py-12 px-6 bg-gray-100 w-full scroll-mt-24"
     >
       <h2 className="text-2xl font-bold text-gray-900 mb-6 font-heading text-4xl">
-        FAQs
+        Frequently Asked Questions
       </h2>
       <Tabs defaultValue="account" className="w-full">
         <TabsList>

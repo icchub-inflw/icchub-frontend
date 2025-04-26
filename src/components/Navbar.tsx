@@ -174,7 +174,7 @@ export default function Navbar({ children }: NavbarProps) {
   const pathname = usePathname();
   const [bgColor, setBgColor] = useState("bg-blue-100 shadow-md");
   const [logoColor, setLogoColor] = useState("bg-white");
-  const [activeSection, setActiveSection] = useState("/about");
+  const [activeSection, setActiveSection] = useState("/faq");
 
   // useEffect(() => {
   //   const sections = document.querySelectorAll("section");
@@ -197,24 +197,25 @@ export default function Navbar({ children }: NavbarProps) {
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
-  
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const id = entry.target.getAttribute("id");
+            console.log("---id---", id);
             if (id) setActiveSection(`/${id}`);
           }
         });
       },
       {
-        threshold: 0.75, // Ensures more of the section is visible before triggering
+        threshold: 0.5, // Ensures more of the section is visible before triggering
         rootMargin: "-50px 0px -50px 0px", // Fine-tunes the trigger point
       }
     );
-  
+
     sections.forEach((section) => observer.observe(section));
-  
+
     return () => sections.forEach((section) => observer.unobserve(section));
   }, []);
 
@@ -246,9 +247,8 @@ export default function Navbar({ children }: NavbarProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-  console.log('activeSection', activeSection)
-  console.log('pathname', pathname)
+  console.log("activeSection", activeSection);
+  console.log("pathname", pathname);
 
   return (
     <>
@@ -310,15 +310,11 @@ export default function Navbar({ children }: NavbarProps) {
             </Link>
           </div> */}
 
-
-
           <div className="hidden md:flex gap-6 text-lg">
             <Link
-              href="/#about"
+              href="#about"
               className={`hover:text-blue-500 ${
-                pathname === "/about" || activeSection === "/about"
-                  ? "border-b-2 border-blue-500"
-                  : ""
+                activeSection === "/about" ? "border-b-2 border-blue-500" : ""
               }`}
             >
               About
@@ -326,7 +322,6 @@ export default function Navbar({ children }: NavbarProps) {
             <Link
               href="#how-it-works"
               className={`hover:text-blue-500 ${
-                pathname === "/how-it-works" ||
                 activeSection === "/how-it-works"
                   ? "border-b-2 border-blue-500"
                   : ""
@@ -335,9 +330,9 @@ export default function Navbar({ children }: NavbarProps) {
               How it Works
             </Link>
             <Link
-              href="/#services"
+              href="#services"
               className={`hover:text-blue-500 ${
-                pathname === "/services" || activeSection === "/services"
+                activeSection === "/services"
                   ? "border-b-2 border-blue-500"
                   : ""
               }`}
@@ -345,10 +340,9 @@ export default function Navbar({ children }: NavbarProps) {
               Services
             </Link>
             <Link
-              href="/#details-for-contractors"
+              href="#details-for-contractors"
               className={`hover:text-blue-500 ${
-                pathname === "/details-for-contractors" ||
-                activeSection === "/details"
+                activeSection === "/details-for-contractors"
                   ? "border-b-2 border-blue-500"
                   : ""
               }`}
@@ -356,11 +350,9 @@ export default function Navbar({ children }: NavbarProps) {
               Details for Contractors
             </Link>
             <Link
-              href="/#faq"
+              href="#faq"
               className={`hover:text-blue-500 ${
-                pathname === "/faq" || activeSection === "/faq"
-                  ? "border-b-2 border-blue-500"
-                  : ""
+                activeSection === "/faq" ? "border-b-2 border-blue-500" : ""
               }`}
             >
               FAQ
@@ -422,7 +414,7 @@ export default function Navbar({ children }: NavbarProps) {
                   Details for Contractors
                 </Link>
                 <Link
-                  href="/faq"
+                  href="/#faq"
                   onClick={() => setIsOpen(false)}
                   className="hover:text-blue-500"
                 >

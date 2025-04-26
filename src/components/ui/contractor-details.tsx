@@ -1,6 +1,6 @@
 "use client";
 
-import { Check, X } from "lucide-react";
+import { Benefit } from "@/icons/benefit";
 import { CheckList } from "@/icons/checklist";
 import { JoinUs } from "@/icons/join-us";
 import { motion } from "framer-motion";
@@ -8,47 +8,23 @@ import Link from "next/link";
 
 const contractorDetails = [
   {
-    id: 1,
-    title: "Inclusion criteria",
-    listIcon: (
-      <span className="text-green-800 bg-green-300 inline-block rounded-full p-1">
-        <Check className="h-4 w-4" />
-      </span>
-    ),
-    points: [
-      "Insurance protection ",
-      "Relevant certifications for given trade ",
-      "Strong online reviews/testimonials  ",
-      "Good standing within customer protection databases (e.g., Better Business Bureau) ",
-    ],
+    title: "Join Us",
     description:
       "Become part of a trusted network of skilled contractors and grow your business with us.",
     icon: <JoinUs />,
   },
   {
-    id: 2,
-    title: "Exclusion criteria",
-    listIcon: (
-      <span className="text-red-800 bg-red-300 inline-block rounded-full p-1">
-        <X className="h-4 w-4" />
-      </span>
-    ),
-    points: [
-      "Few or limited online reviews",
-      "Poor presence online",
-      "Poor user reviews",
-      "Poor standing with customer protection databases",
-    ],
+    title: "Key Eligibility Criteria",
     description:
-      "Licensed professionals with proven experience in home renovations, architecture, or interior design.",
+      "Professionals with proven experience in home renovations, appropriate certifications, and insurance protection will be considered for the network.",
     icon: <CheckList />,
   },
-  // {
-  //   title: "Key Benefits",
-  //   description:
-  //     "Access to exclusive projects, seamless client matching, and business growth opportunities.",
-  //   icon: <Benefit />,
-  // },
+  {
+    title: "Key Benefits",
+    description:
+      "Access to exclusive projects, seamless client matching, and business growth opportunities.",
+    icon: <Benefit />,
+  },
 ];
 
 export default function ContractorDetailsBanner() {
@@ -65,25 +41,18 @@ export default function ContractorDetailsBanner() {
         className="bg-blue-500 text-white hover:bg-blue-600 font-body text-xl py-4 px-8 mb-12 rounded-md"
       >
         Start your application
-      </Link>
-      <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading w-1/3">
-        Key Eligibility Criteria
-      </h2>
-      <p className="mb-6">
-        If you are interested in joining the network, we invite you to review a
-        few key components that will be assessed in your applications
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
+      </Link>{" "}
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 w-full max-w-6xl">
         {contractorDetails.map((detail, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-lg shadow-lg p-6 md:w-full mx-auto flex flex-col md:flex-row gap-8 items-start"
+            className="bg-white rounded-lg shadow-lg p-6 md:w-2/3 mx-auto flex flex-col md:flex-row gap-8 items-start"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            {/* <div className="bg-blue-100 p-3 rounded">{detail.icon}</div> */}
+            <div className="bg-blue-100 p-3 rounded">{detail.icon}</div>
             <div>
               {/* <h3 className="text-2xl font-semibold text-gray-900 font-heading">{detail.title}</h3> */}
               <motion.h3
@@ -104,16 +73,7 @@ export default function ContractorDetailsBanner() {
                 />
               </motion.h3>
               <p className="text-gray-700 mt-4 font-body">
-                {/* {detail.description} */}
-                <ul>
-                  {detail.points.map((point) => {
-                    return (
-                      <li key={point} className="flex gap-3 my-2">
-                        <span>{detail.listIcon}</span> {point}
-                      </li>
-                    );
-                  })}
-                </ul>
+                {detail.description}
               </p>
             </div>
           </motion.div>

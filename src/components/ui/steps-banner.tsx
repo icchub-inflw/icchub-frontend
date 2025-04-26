@@ -7,13 +7,47 @@ import { ChatBubble } from "@/icons/chat-bubble";
 import { Team } from "@/icons/team";
 import { Calendar } from "@/icons/calendar";
 import { Agree } from "@/icons/agree";
+import { Button } from "./button";
+import Link from "next/link";
+
+// 1) Begin your chat with inflw. You will be asked a series of pre-screening questions about your project
+// 2) inflw assesses your project needs and personalizes a project team to meet them. Contractors recommended from our network are vetted and passionate about providing quality work
+// 3) inflw provides you with team recommendations, and supports you in booking a time for each contractor to visit your site
+// Contractors visit your project site to provide more accurate project quotes
+// 4) When you’re ready, sign a Home Renovations Contract, detailing the scope of work, estimated timeline, payment schedule, contractor profiles and their liability/warranty procedures
+// Payments are paid out in 2-installments, at the beginning (as a downpayment), and then after the completion of the project.
+// Please note that the final payment is held in trust until final inspection and/or approval of the homeowner.
 
 const steps = [
-  { number: 1, text: "Our approach", icon: <ChatBubble /> },
-  { number: 2, text: "Vetter contractors process", icon: <Team /> },
-  { number: 3, text: "Our priorities", icon: <Calendar /> },
-  { number: 4, text: "Contracting and payments", icon: <Agree /> },
-  //   { number: 5, text: "Monitor your project via your dashboard" },
+  {
+    number: 1,
+    title: "Share your project details",
+    icon: <ChatBubble />,
+    description:
+      "Begin your chat with inflw. You will be asked a series of pre-screening questions about your project.",
+  },
+  {
+    number: 2,
+    title: "Receive recommendations",
+    icon: <Team />,
+    description:
+      "inflw assesses your project needs and personalizes a project team to meet them. Contractors recommended from our network are vetted and passionate about providing quality work.",
+  },
+  {
+    number: 3,
+    title: "Schedule contractor visits",
+    icon: <Calendar />,
+    description:
+      "inflw provides you with team recommendations, and supports you in booking a time for each contractor to visit your site. Contractors visit your project site to provide more accurate project quotes",
+  },
+  {
+    number: 4,
+    title: "Process payments online & securely",
+    icon: <Agree />,
+    description:
+      "When you’re ready, sign a Home Renovations Contract, detailing the scope of work, estimated timeline, payment schedule, contractor profiles and their liability/warranty procedures. Payments are paid out in 2-installments, at the beginning (as a downpayment), and then after the completion of the project. Please note that the final payment is held in trust until final inspection and/or approval of the homeowner.",
+  },
+  //  { number: 5, text: "Monitor your project via your dashboard" },
 ];
 
 // export default function AnimatedStepsRow() {
@@ -73,19 +107,28 @@ const steps = [
 
 export default function AnimatedStepsRow() {
   return (
-    <section id={'how-it-works'} className="flex flex-col py-12 px-4 sm:px-6 bg-gray-100 w-full scroll-mt-24">
+    <section
+      id={"how-it-works"}
+      className="flex flex-col py-12 px-4 sm:px-6 bg-gray-100 w-full scroll-mt-24"
+    >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading items-start">
           Our Approach
         </h2>
         <p className="text-2xl sm:text-xl text-gray-900 mb-8 font-body max-w-7xl text-left">
-          ICCHub.ai’s chatbot, INFLW, was developed to support homeowners in
+          {/* ICCHub.ai’s chatbot, INFLW, was developed to support homeowners in
           sourcing talent within their area and of high quality. Home
           renovations can involve multiple tradespersons, so INFLW ensures you
           know who exactly will be working on your project, (i.e., skill set,
-          licenses and past feedback).{" "}
+          licenses and past feedback).{" "} */}
+          inflw, is an AI Project Coordination Agent that connects homeowners
+          with high quality tradespersons within a given area, and supports both
+          parties in managing the project workflow, including contracting and
+          payment processing inflw removes the endless search time required to
+          find the right trades, and adds robustness in final decision-making
+          for your project team.
         </p>
-        <div className="relative flex flex-col sm:flex-row items-center w-full max-w-7xl justify-start">
+        <div className="relative flex flex-col sm:flex-row items-center w-full max-w-7xl justify-center">
           {/* Dotted Line Animation - Responsive */}
           <motion.div
             className="absolute hidden sm:block top-16 left-[10%] w-[90%] h-1 border-dotted border-blue-500"
@@ -107,18 +150,32 @@ export default function AnimatedStepsRow() {
               {/* Animated Circle */}
               <motion.div
                 className="font-body w-16 h-16 sm:w-36 sm:h-36 flex items-center justify-center rounded-full text-white text-2xl sm:text-3xl font-bold bg-blue-500"
+                // initial={{ opacity: 0, scale: 0.5 }}
+                // animate={{ opacity: 1, scale: 1 }}
+                // transition={{ duration: 0.8 }}
+                // whileHover={{ scale: 1.2 }}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: index * 0.8 }}
-                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.8 }}
+                whileHover={{ scale: 1.1, y: -10 }}
               >
                 {step.number}
               </motion.div>
 
               {/* Step Text */}
-              <p className="font-body mt-2 text-gray-800 text-sm sm:text-base font-semibold w-[85%] sm:w-[75%]">
-                {step.text}
-              </p>
+              <div className="flex flex-col items-center md:h-48">
+                <h1 className="font-body my-2 text-gray-800 md:text-xl font-bold sm:text-base font-semibold w-[85%] sm:w-[75%]">
+                  {step.title}
+                </h1>
+                <div className="bg-white p-3 mx-3 rounded-md font-body md:mt-auto">
+                  <p>
+                    {step.description.slice(0, 80)}...{" "}
+                    <Link href={"#"} className="text-blue-600 mx-2">
+                      More
+                    </Link>
+                  </p>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -137,3 +194,8 @@ export default function AnimatedStepsRow() {
     </section>
   );
 }
+
+// 1) Share your project details
+// 2) Receive recommendations
+// 3) Schedule contractor visits
+// 4) Process payments online & securely

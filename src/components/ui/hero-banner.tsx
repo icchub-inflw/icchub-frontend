@@ -60,14 +60,14 @@ import ImageHost from "./image-host";
 export default function HeroBanner() {
   return (
     <section
-    id={'about'}
+      id={"about"}
       className="relative bg-blue-100 py-36 px-6 min-h-[95vh] bg-cover bg-center"
       style={{
-        backgroundImage:
-          "url('/Untitled design (7).png",
+        backgroundImage: "url('/Untitled design (7).png",
       }}
     >
-      <div className="absolute inset-0 bg-blue-100/90" /> {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-blue-100/90" />{" "}
+      {/* Dark overlay for readability */}
       <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center justify-between">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
@@ -76,20 +76,25 @@ export default function HeroBanner() {
           className="max-w-5xl text-center md:text-left text-gray-800"
         >
           <h1 className="text-4xl md:text-[7rem] font-bold font-heading leading-none">
-            Your <span className="text-blue-600">AI-Powered</span> Home Renovations <span className="text-blue-600">Community</span> Hub
+            Your <span className="text-blue-600">Home</span> Renovations{" "}
+            <span className="text-blue-600"></span>
+            <span className="text-blue-600">Community</span> Hub
           </h1>
-          <p className="max-w-4xl mt-4 text-3xl font-body text-gray-700">
-            Leveraging AI to <strong>simplify</strong> the workflow process of
-            small to medium-scale home renovations.
+          <p className="max-w-4xl mt-4 text-2xl font-body text-gray-700">
+            Powered by AI.
           </p>
-          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button
               size="lg"
               className="bg-blue-500 text-white hover:bg-blue-600 font-body text-xl py-6"
             >
               Submit a Project
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-body text-xl py-6">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-body text-xl py-6"
+            >
               Join as a Contractor
             </Button>
           </div>
@@ -108,4 +113,3 @@ export default function HeroBanner() {
     </section>
   );
 }
-

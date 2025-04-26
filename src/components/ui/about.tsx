@@ -37,9 +37,10 @@ export default function OurVisionBanner() {
           Our Vision
         </h2>
         <p className="mt-4 text-gray-700 text-2xl font-body">
-          ICCHub.ai believes in simplifying the process of sourcing quality and
+          {/* ICCHub.ai believes in simplifying the process of sourcing quality and
           trustworthy contractors that meet your renovation needs, reducing the
-          delays in starting and headaches throughout the project!
+          delays in starting and headaches throughout the project! */}
+          Simplifying small to medium-scale home renovations with inflw
         </p>
       </motion.div>
     </section>

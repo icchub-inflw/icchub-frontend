@@ -25,8 +25,8 @@ export default function Vetted() {
           quality work
         </h2>
         <p className="mt-4 text-gray-700 text-2xl font-body">
-          ICCHub.ai contractors are pre-vetted to ensure project quality is
-          maintained on every project
+          Our contractors are pre-vetted to ensure project quality is maintained
+          on every project.
         </p>
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Button
@@ -61,7 +61,6 @@ export default function Vetted() {
           className="rounded-lg shadow-lg"
         /> */}
         <ImageHost src="/unnamed (2).png" />
-       
       </motion.div>
     </section>
   );

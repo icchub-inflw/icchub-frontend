@@ -60,7 +60,7 @@ export default function HowItWorksBanner() {
   };
 
   return (
-    <section className="bg-gray-100 scroll-mt-24" id="how-it-works">
+    <section className="bg-gray-100 scroll-mt-24" id="">
       <div className="p-4 mt-8 bg-blue-100">
         <h1 className="max-w-[1200px] text-center mx-auto text-3xl font-semibold font-heading">
           How ICCHub.ai Works
