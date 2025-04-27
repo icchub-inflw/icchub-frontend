@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 // import Image from "next/image";
-import ImageHost from "./image-host";
-import { Button } from "./button";
+import ImageHost from "../ui/image-host";
+import { Button } from "../ui/button";
 
 export default function Vetted() {
   return (

@@ -1,10 +1,11 @@
-import HeroBanner from "@/components/ui/hero-banner";
-import AnimatedStepsRow from "@/components/ui/steps-banner";
-import FAQAccordion from "@/components/ui/faq-banner";
-import ServicesBanner from "@/components/ui/services";
-import ContractorDetailsBanner from "@/components/ui/contractor-details";
+import HeroBanner from "@/components/sections/hero-banner";
+import AnimatedStepsRow from "@/components/sections/steps-banner";
+import FAQAccordion from "@/components/sections/faq-banner";
+import ServicesBanner from "@/components/sections/services";
+import ContractorDetailsBanner from "@/components/sections/contractor-details";
 import OurVisionBanner from "@/components/ui/about";
-import Vetted from "@/components/ui/vetted";
+import Vetted from "@/components/sections/vetted";
+import WorkTogetherSection from "@/components/sections/work-together";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <ServicesBanner />
       <ContractorDetailsBanner />
       <FAQAccordion />
+      <WorkTogetherSection />
     </div>
   );
 }

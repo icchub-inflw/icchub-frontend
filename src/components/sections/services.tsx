@@ -73,7 +73,7 @@ export default function ServicesBanner() {
               height={200}
               className="rounded-md mb-4"
             /> */}
-              <div className="p-6 bg-blue-100 rounded-full border border-blue-300 mb-6">{service.icon}</div>
+              <div className="p-6 bg-blue-100 rounded-full mb-6">{service.icon}</div>
 
               <h3 className="text-xl font-semibold text-gray-900 font-heading">
                 {service.title}

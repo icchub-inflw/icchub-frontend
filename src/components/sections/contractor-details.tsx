@@ -33,7 +33,7 @@ export default function ContractorDetailsBanner() {
       id={"details-for-contractors"}
       className="flex flex-col items-center py-12 px-6 bg-blue-100 w-full mt-16 scroll-mt-24"
     >
-      <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading w-1/3">
+      <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading md:w-1/3">
         Join As A Contractor and Get More Leads
       </h2>
       <Link

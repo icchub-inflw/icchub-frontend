@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Oswald, Lato } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/sections/navbar";
 import Footer from "@/components/ui/footer";
 import LoadingWrapper from "@/components/ui/loader-wrapper";
 

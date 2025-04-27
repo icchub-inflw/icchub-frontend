@@ -117,7 +117,7 @@ export default function FAQAccordion() {
           <Accordion
             type="single"
             collapsible
-            className="w-full max-w-4xl bg-white px-8 rounded-lg mx-auto"
+            className="w-full max-w-6xl bg-white px-8 rounded-lg mx-auto"
           >
             {homeownerFaqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
@@ -132,7 +132,7 @@ export default function FAQAccordion() {
           <Accordion
             type="single"
             collapsible
-            className="w-full max-w-4xl bg-white px-8 rounded-lg mx-auto"
+            className="w-full max-w-6xl bg-white px-8 rounded-lg mx-auto"
           >
             {contractorFaqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>

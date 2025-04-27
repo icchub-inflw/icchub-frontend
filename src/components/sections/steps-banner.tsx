@@ -1,25 +1,18 @@
 "use client";
 
 // import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 // import ThreadedArrow from "@/animations/arrow";
 import { ChatBubble } from "@/icons/chat-bubble";
 import { Team } from "@/icons/team";
 import { Calendar } from "@/icons/calendar";
 import { Agree } from "@/icons/agree";
 // import { Button } from "./button";
-import Link from "next/link";
-
-// 1) Begin your chat with inflw. You will be asked a series of pre-screening questions about your project
-// 2) inflw assesses your project needs and personalizes a project team to meet them. Contractors recommended from our network are vetted and passionate about providing quality work
-// 3) inflw provides you with team recommendations, and supports you in booking a time for each contractor to visit your site
-// Contractors visit your project site to provide more accurate project quotes
-// 4) When you’re ready, sign a Home Renovations Contract, detailing the scope of work, estimated timeline, payment schedule, contractor profiles and their liability/warranty procedures
-// Payments are paid out in 2-installments, at the beginning (as a downpayment), and then after the completion of the project.
-// Please note that the final payment is held in trust until final inspection and/or approval of the homeowner.
+import { useState } from "react";
 
 const steps = [
   {
+    id: 1,
     number: 1,
     title: "Share your project details",
     icon: <ChatBubble />,
@@ -27,6 +20,7 @@ const steps = [
       "Begin your chat with inflw. You will be asked a series of pre-screening questions about your project.",
   },
   {
+    id: 2,
     number: 2,
     title: "Receive recommendations",
     icon: <Team />,
@@ -34,6 +28,7 @@ const steps = [
       "inflw assesses your project needs and personalizes a project team to meet them. Contractors recommended from our network are vetted and passionate about providing quality work.",
   },
   {
+    id: 3,
     number: 3,
     title: "Schedule contractor visits",
     icon: <Calendar />,
@@ -41,6 +36,7 @@ const steps = [
       "inflw provides you with team recommendations, and supports you in booking a time for each contractor to visit your site. Contractors visit your project site to provide more accurate project quotes",
   },
   {
+    id: 4,
     number: 4,
     title: "Process payments online & securely",
     icon: <Agree />,
@@ -106,6 +102,12 @@ const steps = [
 // }
 
 export default function AnimatedStepsRow() {
+  const [expandedStep, setExpandedStep] = useState<number | null>(null);
+
+  const toggleExpand = (id: number) => {
+    setExpandedStep(expandedStep === id ? null : id);
+  };
+
   return (
     <section
       id={"how-it-works"}
@@ -128,7 +130,7 @@ export default function AnimatedStepsRow() {
           find the right trades, and adds robustness in final decision-making
           for your project team.
         </p>
-        <div className="relative flex flex-col sm:flex-row items-center w-full max-w-7xl justify-center">
+        <div className="relative flex flex-col sm:flex-row items-start w-full max-w-7xl justify-center">
           {/* Dotted Line Animation - Responsive */}
           <motion.div
             className="absolute hidden sm:block top-16 left-[10%] w-[90%] h-1 border-dotted border-blue-500"
@@ -149,7 +151,7 @@ export default function AnimatedStepsRow() {
             >
               {/* Animated Circle */}
               <motion.div
-                className="font-body w-16 h-16 sm:w-36 sm:h-36 flex items-center justify-center rounded-full text-white text-2xl sm:text-3xl font-bold bg-blue-500"
+                className="font-heading w-16 h-16 sm:w-36 sm:h-36 flex items-center justify-center rounded-full text-white text-2xl sm:text-5xl font-semibold bg-blue-500 hover:cursor-pointer mt-6 md:mt-0"
                 // initial={{ opacity: 0, scale: 0.5 }}
                 // animate={{ opacity: 1, scale: 1 }}
                 // transition={{ duration: 0.8 }}
@@ -163,11 +165,11 @@ export default function AnimatedStepsRow() {
               </motion.div>
 
               {/* Step Text */}
-              <div className="flex flex-col items-center md:h-48">
-                <h1 className="font-body my-2 text-gray-800 md:text-xl font-bold sm:text-base font-semibold w-[85%] sm:w-[75%]">
+              {/* <div className="flex flex-col items-center md:h-48">
+                <div className="flex flex-col items-center bg-white p-3 mx-3 rounded-md font-body md:mt-auto">
+                <h1 className="font-body my-2 text-gray-800 md:text-xl font-bold sm:text-base font-semibold w-[80%]">
                   {step.title}
                 </h1>
-                <div className="bg-white p-3 mx-3 rounded-md font-body md:mt-auto">
                   <p>
                     {step.description.slice(0, 80)}...{" "}
                     <Link href={"#"} className="text-blue-600 mx-2">
@@ -175,6 +177,53 @@ export default function AnimatedStepsRow() {
                     </Link>
                   </p>
                 </div>
+              </div> */}
+              <div className="flex flex-col gap-6 mt-6">
+                <motion.div
+                  key={step.id}
+                  layout
+                  className="flex flex-col items-center bg-white p-3 mx-3 rounded-md font-body"
+                >
+                  <h1 className="font-body my-2 text-gray-800 md:text-xl font-bold sm:text-base font-semibold w-[80%] text-center">
+                    {step.title}
+                  </h1>
+
+                  <div className="w-[80%] text-center">
+                    <AnimatePresence mode="wait">
+                      {expandedStep !== step.id ? (
+                        <motion.p
+                          key="collapsed"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                        >
+                          {step.description.slice(0, 70)} ...{" "}
+                          <button
+                            onClick={() => toggleExpand(step.id)}
+                            className="text-blue-600 mx-2"
+                          >
+                            More
+                          </button>
+                        </motion.p>
+                      ) : (
+                        <motion.p
+                          key="expanded"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                        >
+                          {step.description}{" "}
+                          <button
+                            onClick={() => toggleExpand(step.id)}
+                            className="text-blue-600 mx-2"
+                          >
+                            Less
+                          </button>
+                        </motion.p>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </motion.div>
               </div>
             </motion.div>
           ))}
