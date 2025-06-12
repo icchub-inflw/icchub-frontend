@@ -54,7 +54,6 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import ImageHost from "../ui/image-host";
 
 export default function HeroBanner() {
   return (
