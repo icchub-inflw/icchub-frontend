@@ -66,7 +66,7 @@ export default function HeroBanner() {
     >
       <div className="absolute inset-0 bg-gray-400/60" />{" "}
       {/* Dark overlay for readability */}
-      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-40 justify-between">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
