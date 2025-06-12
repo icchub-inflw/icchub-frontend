@@ -123,12 +123,9 @@ export default function AnimatedStepsRow() {
           renovations can involve multiple tradespersons, so INFLW ensures you
           know who exactly will be working on your project, (i.e., skill set,
           licenses and past feedback).{" "} */}
-          inflw, is an AI Project Coordination Agent that connects homeowners
-          with high quality tradespersons within a given area, and supports both
-          parties in managing the project workflow, including contracting and
-          payment processing inflw removes the endless search time required to
-          find the right trades, and adds robustness in final decision-making
-          for your project team.
+          inflw, leverages AI to connect homeowners with high quality trades
+          pros within a given area, and supports both parties in managing the
+          project workflow, including contracting and payment processing.
         </p>
         <div className="relative flex flex-col sm:flex-row items-start w-full max-w-7xl justify-center">
           {/* Dotted Line Animation - Responsive */}

@@ -21,12 +21,10 @@ export default function Vetted() {
         viewport={{ once: true }}
       >
         <h2 className="text-5xl font-bold text-gray-900 font-heading">
-          Vetted contractors: licensed, skills & passionate about providing
-          quality work
+        Vetted trades pros: licensed, skilled & passionate about providing quality work
         </h2>
         <p className="mt-4 text-gray-700 text-2xl font-body">
-          Our contractors are pre-vetted to ensure project quality is maintained
-          on every project.
+        Our <strong>trades pros</strong> are pre-vetted to ensure quality is maintained on every project
         </p>
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Button
@@ -60,7 +58,7 @@ export default function Vetted() {
           height={300}
           className="rounded-lg shadow-lg"
         /> */}
-        <ImageHost src="/unnamed (2).png" />
+        <ImageHost src="/iStock-494726700.jpg" />
       </motion.div>
     </section>
   );

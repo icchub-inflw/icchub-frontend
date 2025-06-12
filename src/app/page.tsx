@@ -6,6 +6,7 @@ import ContractorDetailsBanner from "@/components/sections/contractor-details";
 import OurVisionBanner from "@/components/ui/about";
 import Vetted from "@/components/sections/vetted";
 import WorkTogetherSection from "@/components/sections/work-together";
+import VideoPlayer from "@/components/sections/video";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <OurVisionBanner />
     
       <AnimatedStepsRow />
+      <VideoPlayer />
       <Vetted />
       <ServicesBanner />
       <ContractorDetailsBanner />

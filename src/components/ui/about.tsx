@@ -23,7 +23,7 @@ export default function OurVisionBanner() {
           height={300}
           className="rounded-lg shadow-lg"
         /> */}
-        <ImageHost src="/annie-gray-WEWTGkPUVT0-unsplash.jpg" />
+        <ImageHost src="/iStock-639290490.jpg" />
       </motion.div>
       {/* Right Column - Image */}
       <motion.div
@@ -40,7 +40,7 @@ export default function OurVisionBanner() {
           {/* ICCHub.ai believes in simplifying the process of sourcing quality and
           trustworthy contractors that meet your renovation needs, reducing the
           delays in starting and headaches throughout the project! */}
-          Simplifying small to medium-scale home renovations with inflw
+          The Inflw Construction Community Hub → inflw aims to simplify small to medium-scale home renovations.
         </p>
       </motion.div>
     </section>

@@ -50,7 +50,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -61,26 +60,24 @@ export default function HeroBanner() {
   return (
     <section
       id={"about"}
-      className="relative bg-blue-100 py-36 px-6 min-h-[95vh] bg-cover bg-center"
+      className="relative bg-gray-100 py-36 px-6 min-h-[95vh] bg-cover bg-center"
       style={{
-        backgroundImage: "url('/Untitled design (7).png",
+        backgroundImage: "url('/iStock-1714802084.jpg",
       }}
     >
-      <div className="absolute inset-0 bg-blue-100/90" />{" "}
+      <div className="absolute inset-0 bg-gray-400/60" />{" "}
       {/* Dark overlay for readability */}
       <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center justify-between">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl text-center md:text-left text-gray-800"
+          className="max-w-5xl text-center md:text-left text-white"
         >
           <h1 className="text-4xl md:text-[7rem] font-bold font-heading leading-none">
-            Your <span className="text-blue-600">Home</span> Renovations{" "}
-            <span className="text-blue-600"></span>
-            <span className="text-blue-600">Community</span> Hub
+            Your Home Renovations Community Hub
           </h1>
-          <p className="max-w-4xl mt-4 text-2xl font-body text-gray-700">
+          <p className="max-w-4xl mt-4 text-2xl font-body text-white">
             Powered by AI.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -107,7 +104,7 @@ export default function HeroBanner() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-10 md:mt-0 relative"
         >
-          <ImageHost src="/unnamed (1).png" />
+          {/* <ImageHost src="/unnamed (1).png" /> */}
         </motion.div>
       </div>
     </section>

@@ -347,7 +347,7 @@ export default function Navbar({ children }: NavbarProps) {
                   : ""
               }`}
             >
-              Details for Contractors
+              Details for Trades Pros
             </Link>
             <Link
               href="#faq"
@@ -411,7 +411,7 @@ export default function Navbar({ children }: NavbarProps) {
                   onClick={() => setIsOpen(false)}
                   className="hover:text-blue-500"
                 >
-                  Details for Contractors
+                  Details for Trades Pros
                 </Link>
                 <Link
                   href="/#faq"

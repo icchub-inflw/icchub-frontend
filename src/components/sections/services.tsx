@@ -45,18 +45,24 @@ const services = [
 
 export default function ServicesBanner() {
   return (
-    <section id={'services'}  className="flex flex-col items-center py-12 px-6 w-full scroll-mt-24">
+    <section
+      id={"services"}
+      className="flex flex-col items-center py-12 px-6 w-full scroll-mt-24"
+    >
       <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading">
         Our Services
       </h2>
       <p className="text-gray-700 text-lg text-center mb-8 max-w-2xl font-body">
-        ICCHub.ai contractors can complete renovation services for the following
-        areas of your home
+        Our trades pros can complete renovation services for the following areas
+        of your home
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full max-w-6xl">
         {services.map((service, index) => (
-          <Link key={service.id} href={"#"} className="inline-block transition-transform duration-300 ease-in-out transform hover:-translate-y-2"
+          <Link
+            key={service.id}
+            href={"#"}
+            className="inline-block transition-transform duration-300 ease-in-out transform hover:-translate-y-2"
           >
             <motion.div
               key={index}
@@ -73,7 +79,9 @@ export default function ServicesBanner() {
               height={200}
               className="rounded-md mb-4"
             /> */}
-              <div className="p-6 bg-blue-100 rounded-full mb-6">{service.icon}</div>
+              <div className="p-6 bg-blue-100 rounded-full mb-6">
+                {service.icon}
+              </div>
 
               <h3 className="text-xl font-semibold text-gray-900 font-heading">
                 {service.title}

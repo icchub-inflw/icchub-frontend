@@ -20,7 +20,7 @@ export default function ImageHost({
         alt={alt}
         width={width}
         height={height}
-        className="rounded-lg shadow-lg"
+        // className="rounded-lg shadow-lg"
       />
     </div>
   );

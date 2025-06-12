@@ -17,8 +17,7 @@ export default function WorkTogetherSection() {
 
       {/* Subtext */}
       <p className="text-gray-700 text-lg sm:text-xl font-body mb-8 max-w-2xl">
-        {`We’re looking for people who want to make renovations simple, effective,
-        and community-driven.`}
+        {`Join us on our journey to making home renovations simpler.`}
       </p>
 
       {/* Button */}
