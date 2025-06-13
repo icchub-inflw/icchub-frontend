@@ -172,7 +172,7 @@ interface NavbarProps {
 export default function Navbar({ children }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const [bgColor, setBgColor] = useState("bg-blue-100 shadow-md");
+  const [bgColor, setBgColor] = useState("bg-transparent");
   const [logoColor, setLogoColor] = useState("bg-white");
   const [activeSection, setActiveSection] = useState("/faq");
 
@@ -225,10 +225,10 @@ export default function Navbar({ children }: NavbarProps) {
 
       console.log("scrollY", scrollY);
 
-      if (scrollY >= 400 && scrollY < 850) {
-        setBgColor("bg-blue-100 shadow-md"); // Light blue at mid-scroll
+      if (scrollY >= 0 && scrollY < 250) {
+        setBgColor("bg-transparent"); // Light blue at mid-scroll
         setLogoColor("bg-white");
-      } else if (scrollY >= 850 && scrollY < 1350) {
+      } else if (scrollY >= 250 && scrollY < 1350) {
         setBgColor("bg-white shadow-md");
         setLogoColor("bg-blue-100"); // Light gray further down
       } else if (scrollY >= 1350 && scrollY < 2350) {

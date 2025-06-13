@@ -34,7 +34,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${oswald.variable} ${lato.variable} antialiased`}>
         <LoadingWrapper>
-          <Navbar />
           {children}
         </LoadingWrapper>
       </body>

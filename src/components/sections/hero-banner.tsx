@@ -54,6 +54,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Navbar from "./navbar";
 
 export default function HeroBanner() {
   return (
@@ -65,6 +66,8 @@ export default function HeroBanner() {
       }}
     >
       <div className="absolute inset-0 bg-gray-400/60" />{" "}
+      <Navbar />
+
       {/* Dark overlay for readability */}
       <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-40 justify-between">
         <motion.div
