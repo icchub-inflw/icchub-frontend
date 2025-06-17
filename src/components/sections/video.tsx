@@ -7,7 +7,7 @@ export default function VideoPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center p-4 max-w-7xl mx-auto">
+    <div className="flex flex-col justify-center items-center px-4 max-w-7xl mx-auto py-20">
       <motion.div
         className="w-full text-center md:text-left"
         initial={{ opacity: 0, x: -50 }}
@@ -15,10 +15,10 @@ export default function VideoPlayer() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl font-bold text-gray-900 font-heading">
+        <h2 className="text-xl font-bold text-[#156082] font-heading2">
           In Action
         </h2>
-        <p className="mt-4 text-gray-700 text-2xl font-body">
+        <p className="mt-4 text-gray-700 text-3xl font-heading2 italic">
           Chat with inflw to reduce the endless search time required to find the
           right trades and add robustness in final decision-making for your
           project teams.

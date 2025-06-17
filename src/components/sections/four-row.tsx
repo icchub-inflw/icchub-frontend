@@ -24,10 +24,10 @@ const bannerContent = [
     reverse: true,
     image:
       "https://images.unsplash.com/photo-1625864667443-bc321825fcce?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Receive contractor team recommendation",
-    description: `INFLW will assesses your project needs, and the availability of members within the ICCHub network to recommend a set of contractor(s) for your project
+    title: "Receive trades pro team recommendation",
+    description: `INFLW will assesses your project needs, and the availability of members within the ICCHub network to recommend a set of trades pro(s) for your project
 
-    Contractors included in the network have the following:
+    trades pros included in the network have the following:
     Insurance protection
     Relevant certifications for given trade
     Strong online reviews
@@ -41,8 +41,8 @@ const bannerContent = [
     reverse: false,
     image:
       "https://images.unsplash.com/photo-1554376279-d0bc03ddea1a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Book site visits with contractor team",
-    description: `After you have received the recommendation, INFLW will book a site visit with the contractor(s) to meet you in person and get a better understanding of your project. Only after each contractor party has seen your project will you receive a a complete and final project quote
+    title: "Book site visits with trades pro team",
+    description: `After you have received the recommendation, INFLW will book a site visit with the trades pro(s) to meet you in person and get a better understanding of your project. Only after each trades pro party has seen your project will you receive a a complete and final project quote
 
     Please note that INLW will support you in your review of this quote, but providing you with price estimates ahead of their visit
     
@@ -56,7 +56,7 @@ const bannerContent = [
     image:
       "https://images.unsplash.com/photo-1527697911963-20cb424e9608?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Contracting and payments",
-    description: `Both parties will be asked to sign a Home Renovations Contract, detailing the scope of work, estimated timeline, payment schedule, contractor profiles and their liability/warranty procedures
+    description: `Both parties will be asked to sign a Home Renovations Contract, detailing the scope of work, estimated timeline, payment schedule, trades pro profiles and their liability/warranty procedures
 
     Payments will be held in trust by ICCHub until a milestone is completed and reviewed by a third-party project inspector, after which it is paid out.
     `,

@@ -33,10 +33,10 @@ export default function OurVisionBanner() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl font-bold text-gray-900 font-heading">
+        <h2 className="text-xl font-bold text-[#156082] font-heading2">
           Our Vision
         </h2>
-        <p className="mt-4 text-gray-700 text-2xl font-body">
+        <p className="mt-4 text-gray-700 text-3xl font-heading2">
           {/* ICCHub.ai believes in simplifying the process of sourcing quality and
           trustworthy contractors that meet your renovation needs, reducing the
           delays in starting and headaches throughout the project! */}

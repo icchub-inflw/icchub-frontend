@@ -14,10 +14,10 @@ const homeownerFaqs = [
     id: 1,
     question: "How exactly does the process work?",
     answer: [
-      "Share your project details: describe your project as best as you can to inflw, our chatbot and your new best friend!",
-      "Receive recommendations: inflw scans our database to pull together a team of trades pros to meet all the skill sets required to complete your job and can start your project soonest.",
-      "Schedule trades pro visits: review the trades pro team profiles and confirm your interest in receiving support in scheduling your first site visits for each trades pro to review the project in detail and prepare a quote. Please note these site visits help to ensure the prices quoted are most accurate and reasonable to both parties.",
-      "Process payments online & securely: inflw will support you both in drafting a Home Renovations Contract and securely set up your payment plan once there is alignment between both parties on the project scope and pricing quotation.",
+      (<><strong>Share your project details:</strong> describe your project as best as you can to inflw, our chatbot and your new best friend!</>),
+      (<><strong>Receive recommendations:</strong> inflw scans our database to pull together a team of trades pros to meet all the skill sets required to complete your job and can start your project soonest.</>),
+      (<><strong>Schedule trades pro visits:</strong> review the trades pro team profiles and confirm your interest in receiving support in scheduling your first site visits for each trades pro to review the project in detail and prepare a quote. Please note these site visits help to ensure the prices quoted are most accurate and reasonable to both parties.</>),
+      (<><strong>Process payments online & securely:</strong> inflw will support you both in drafting a Home Renovations Contract and securely set up your payment plan once there is alignment between both parties on the project scope and pricing quotation.</>),
     ],
   },
   {
@@ -115,8 +115,8 @@ const contractorFaqs = [
     id: 13,
     question: "How do I get paid?",
     answer: [
-      "First encounter: homeowners will be required to pay for your initial site visit, a fee of which will be reduced from the total project cost to be paid.",
-      "Project downpayment & milestones: once a contract is signed between both parties to begin the work, an initial down payment will be paid, followed by a final payment at the completion of the project. Inflw will support you both in drafting a renovation project contract and securely set up your payment plan.",
+      (<><strong>First encounter:</strong> homeowners will be required to pay for your initial site visit, a fee of which will be reduced from the total project cost to be paid.</>),
+      (<><strong>Project downpayment & milestones:</strong> once a contract is signed between both parties to begin the work, an initial down payment will be paid, followed by a final payment at the completion of the project. Inflw will support you both in drafting a renovation project contract and securely set up your payment plan.</>),
     ],
   },
   {
@@ -130,7 +130,10 @@ const contractorFaqs = [
     id: 15,
     question: "What are the fees for using the platform",
     answer: [
-      "Monthly payment: trades pros are expected to pay a fee to be featured on the platform and paired with projects. Transaction fees: A small transaction fee will be made for each processed payment within the platform. Please note the transaction fees will be waived for your first project within the platform!",
+      (<><strong>Monthly payment:</strong> trades pros are expected to pay a fee to be featured on the platform and paired with projects. Transaction fees: A small transaction fee will be made for each processed payment within the platform. Please note the transaction fees will be waived for your first project within the platform!</>),
+
+      (<><strong>Transaction fees:</strong> A small transaction fee will be made for each processed payment within the platform. <span className="italic">Please note the transaction fees will be waived for your first project within the platform!</span></>),
+
     ],
   },
 ];
@@ -141,7 +144,7 @@ export default function FAQAccordion() {
       id={"faq"}
       className="flex flex-col items-center py-12 px-6 bg-gray-100 w-full scroll-mt-24"
     >
-      <h2 className="text-2xl font-bold text-gray-900 mb-6 font-heading text-4xl">
+      <h2 className="text-2xl font-bold text-gray-900 mb-6 font-heading2 text-4xl">
         Frequently Asked Questions
       </h2>
       <Tabs defaultValue="account" className="w-full">

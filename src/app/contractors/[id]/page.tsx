@@ -132,7 +132,7 @@ export default function ContractorProfile() {
           </h2>
           <p className="mt-2 text-gray-700 font-body">
            {`This section provides a summary of online reviews. The AI-generated
-            content will summarize key insights and highlight the contractor's
+            content will summarize key insights and highlight the trades pro's
             strengths in 3-5 sentences.`}
           </p>
         </div>
@@ -143,7 +143,7 @@ export default function ContractorProfile() {
         {/* Contractor Details */}
         <div className="border rounded-lg p-6 bg-white shadow-lg">
           <h2 className="text-lg font-semibold text-gray-900 font-heading">
-           Additional Contractor Information
+           Additional Trades Pro Information
           </h2>
           <ul className="mt-4 text-gray-700 space-y-2 font-body">
             {/* <li>

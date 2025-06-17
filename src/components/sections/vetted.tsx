@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 // import Image from "next/image";
 import ImageHost from "../ui/image-host";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 
 export default function Vetted() {
   return (
@@ -20,13 +20,14 @@ export default function Vetted() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
+        <h2 className="text-xl font-bold text-[#156082] font-heading2 mb-4">Our Trades Pros</h2>
         <h2 className="text-5xl font-bold text-gray-900 font-heading">
         Vetted trades pros: licensed, skilled & passionate about providing quality work
         </h2>
-        <p className="mt-4 text-gray-700 text-2xl font-body">
+        <p className="mt-4 text-gray-700 text-2xl font-heading2">
         Our <strong>trades pros</strong> are pre-vetted to ensure quality is maintained on every project
         </p>
-        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        {/* <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <Button
             size="lg"
             className="bg-blue-500 text-white hover:bg-blue-600 font-body text-xl py-6"
@@ -40,7 +41,7 @@ export default function Vetted() {
           >
             Join as a Contractor
           </Button>
-        </div>
+        </div> */}
       </motion.div>
       {/* Right Column - Image */}
 

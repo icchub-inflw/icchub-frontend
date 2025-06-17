@@ -25,15 +25,15 @@ const steps = [
     title: "Receive recommendations",
     icon: <Team />,
     description:
-      "inflw assesses your project needs and personalizes a project team to meet them. Contractors recommended from our network are vetted and passionate about providing quality work.",
+      "inflw assesses your project needs and personalizes a project team to meet them. trades pros recommended from our network are vetted and passionate about providing quality work.",
   },
   {
     id: 3,
     number: 3,
-    title: "Schedule contractor visits",
+    title: "Schedule trades pro visits",
     icon: <Calendar />,
     description:
-      "inflw provides you with team recommendations, and supports you in booking a time for each contractor to visit your site. Contractors visit your project site to provide more accurate project quotes",
+      "inflw provides you with team recommendations, and supports you in booking a time for each trades pro to visit your site. trades pros visit your project site to provide more accurate project quotes.",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const steps = [
     title: "Process payments online & securely",
     icon: <Agree />,
     description:
-      "When you’re ready, sign a Home Renovations Contract, detailing the scope of work, estimated timeline, payment schedule, contractor profiles and their liability/warranty procedures. Payments are paid out in 2-installments, at the beginning (as a downpayment), and then after the completion of the project. Please note that the final payment is held in trust until final inspection and/or approval of the homeowner.",
+      "When you’re ready, sign a Home Renovations Contract, detailing the scope of work, estimated timeline, payment schedule, trades pro profiles and their liability/warranty procedures. Payments are paid out in 2-installments, at the beginning (as a downpayment), and then after the completion of the project. Please note that the final payment is held in trust until final inspection and/or approval of the homeowner.",
   },
   //  { number: 5, text: "Monitor your project via your dashboard" },
 ];
@@ -114,10 +114,10 @@ export default function AnimatedStepsRow() {
       className="flex flex-col py-12 px-4 sm:px-6 bg-gray-100 w-full scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading items-start">
+        <h2 className="text-xl font-bold text-[#156082] font-heading2 mb-3 font-heading items-start">
           Our Approach
         </h2>
-        <p className="text-2xl sm:text-xl text-gray-900 mb-8 font-body max-w-7xl text-left">
+        <p className="text-gray-700 text-3xl font-heading2 mb-8 max-w-7xl text-left">
           {/* ICCHub.ai’s chatbot, INFLW, was developed to support homeowners in
           sourcing talent within their area and of high quality. Home
           renovations can involve multiple tradespersons, so INFLW ensures you
@@ -129,10 +129,18 @@ export default function AnimatedStepsRow() {
         </p>
         <div className="relative flex flex-col sm:flex-row items-start w-full max-w-7xl justify-center">
           {/* Dotted Line Animation - Responsive */}
-          <motion.div
+          {/* <motion.div
             className="absolute hidden sm:block top-16 left-[10%] w-[90%] h-1 border-dotted border-blue-500"
             initial={{ width: 0 }}
             animate={{ width: "80%" }}
+            transition={{ duration: 6, ease: "easeInOut" }}
+            style={{ borderBottomWidth: "2px" }}
+          /> */}
+          <motion.div
+            className="absolute hidden sm:block top-16 left-[10%] h-1 border-dotted border-blue-500"
+            initial={{ width: 0 }}
+            whileInView={{ width: "80%" }}
+            viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 6, ease: "easeInOut" }}
             style={{ borderBottomWidth: "2px" }}
           />
@@ -243,5 +251,5 @@ export default function AnimatedStepsRow() {
 
 // 1) Share your project details
 // 2) Receive recommendations
-// 3) Schedule contractor visits
+// 3) Schedule trades pro visits
 // 4) Process payments online & securely

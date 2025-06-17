@@ -14,32 +14,32 @@ const services = [
     title: "Kitchen",
     image: "https://via.placeholder.com/300",
     icon: <Wrench />,
-    description:
-      "Transform your home with expert craftsmanship and high-quality materials.",
+    description: ''
+      // "Transform your home with expert craftsmanship and high-quality materials.",
   },
   {
     id: 2,
     title: "Living room",
     image: "https://via.placeholder.com/300",
     icon: <Hammer />,
-    description:
-      "Our professional designers will help you create a stunning space that reflects your vision.",
+    description: ''
+      // "Our professional designers will help you create a stunning space that reflects your vision.",
   },
   {
     id: 3,
     title: "Dining room",
     image: "https://via.placeholder.com/300",
     icon: <PencilRuler />,
-    description:
-      "Seamless planning and design to bring your dream project to life.",
+    description: ''
+      // "Seamless planning and design to bring your dream project to life.",
   },
   {
     id: 4,
     title: "Bathroom",
     image: "https://via.placeholder.com/300",
     icon: <Worker />,
-    description:
-      "Seamless planning and design to bring your dream project to life.",
+    description: ''
+      // "Seamless planning and design to bring your dream project to life.",
   },
 ];
 
@@ -49,10 +49,10 @@ export default function ServicesBanner() {
       id={"services"}
       className="flex flex-col items-center py-12 px-6 w-full scroll-mt-24"
     >
-      <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading">
+      <h2 className="text-xl font-bold text-[#156082] font-heading2 mb-3 text-center">
         Our Services
       </h2>
-      <p className="text-gray-700 text-lg text-center mb-8 max-w-2xl font-body">
+      <p className="text-center mb-8 max-w-2xl text-gray-700 text-3xl font-heading2">
         Our trades pros can complete renovation services for the following areas
         of your home
       </p>

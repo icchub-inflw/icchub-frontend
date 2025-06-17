@@ -6,17 +6,17 @@ export default function WorkTogetherSection() {
   return (
     <section className="bg-white py-20 px-6 flex flex-col items-start max-w-6xl mx-auto">
       {/* Small heading */}
-      <h3 className="text-blue-600 text-lg font-semibold mb-2 font-body">
+      {/* <h3 className="text-blue-600 text-lg font-semibold mb-2 font-body">
         Work at ICCHub
-      </h3>
+      </h3> */}
 
       {/* Main heading */}
-      <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 font-heading">
+      <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-3 font-heading2">
         {`Let's work together`}
       </h2>
 
       {/* Subtext */}
-      <p className="text-gray-700 text-lg sm:text-xl font-body mb-8 max-w-2xl">
+      <p className="text-gray-700 text-lg sm:text-xl font-body mb-8 max-w-2xl italic">
         {`Join us on our journey to making home renovations simpler.`}
       </p>
 
@@ -33,7 +33,7 @@ export default function WorkTogetherSection() {
         variant="outline"
         className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-body text-xl py-6"
       >
-        Join as a Contractor
+        Join as a Trades Pro
       </Button>
       </div>
       

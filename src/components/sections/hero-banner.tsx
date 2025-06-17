@@ -65,7 +65,8 @@ export default function HeroBanner() {
         backgroundImage: "url('/iStock-1714802084.jpg",
       }}
     >
-      <div className="absolute inset-0 bg-gray-400/60" />{" "}
+      {/* bg-gray-400/60 --> using as overlay for hero image */} 
+      <div className="absolute inset-0" />{" "}
       <Navbar />
 
       {/* Dark overlay for readability */}
@@ -76,25 +77,25 @@ export default function HeroBanner() {
           transition={{ duration: 0.8 }}
           className="max-w-5xl text-center md:text-left text-white"
         >
-          <h1 className="text-4xl md:text-[7rem] font-bold font-heading leading-none">
+          <h1 className="text-4xl md:text-[7rem] font-bold font-heading2 leading-none">
             Your Home Renovations Community Hub
           </h1>
-          <p className="max-w-4xl mt-4 text-2xl font-body text-white">
-            Powered by AI.
+          <p className="max-w-4xl mt-4 text-4xl font-heading2 text-white font-bold">
+            Powered by AI
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button
               size="lg"
-              className="bg-blue-500 text-white hover:bg-blue-600 font-body text-xl py-6"
+              className="bg-blue-500 text-white hover:bg-blue-600 font-heading2 text-xl py-6"
             >
               Submit a Project
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-body text-xl py-6"
+              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-heading2 text-xl py-6"
             >
-              Join as a Contractor
+              Join as a Trades Pro
             </Button>
           </div>
         </motion.div>
