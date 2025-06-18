@@ -5,41 +5,42 @@ import { PencilRuler } from "@/icons/pencil-ruler";
 import { Worker } from "@/icons/worker";
 import { Wrench } from "@/icons/wrench";
 import { motion } from "framer-motion";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
+import ImageHost from "../ui/image-host";
 
 const services = [
   {
     id: 1,
     title: "Kitchen",
-    image: "https://via.placeholder.com/300",
+    image: "/iStock-475244493.jpg",
     icon: <Wrench />,
-    description: ''
-      // "Transform your home with expert craftsmanship and high-quality materials.",
+    description: "",
+    // "Transform your home with expert craftsmanship and high-quality materials.",
   },
   {
     id: 2,
     title: "Living room",
-    image: "https://via.placeholder.com/300",
+    image: "/iStock-2201991557.jpg",
     icon: <Hammer />,
-    description: ''
-      // "Our professional designers will help you create a stunning space that reflects your vision.",
+    description: "",
+    // "Our professional designers will help you create a stunning space that reflects your vision.",
   },
   {
     id: 3,
     title: "Dining room",
-    image: "https://via.placeholder.com/300",
+    image: "/iStock-1704128229.jpg",
     icon: <PencilRuler />,
-    description: ''
-      // "Seamless planning and design to bring your dream project to life.",
+    description: "",
+    // "Seamless planning and design to bring your dream project to life.",
   },
   {
     id: 4,
     title: "Bathroom",
-    image: "https://via.placeholder.com/300",
+    image: "/iStock-1138372405.jpg",
     icon: <Worker />,
-    description: ''
-      // "Seamless planning and design to bring your dream project to life.",
+    description: "",
+    // "Seamless planning and design to bring your dream project to life.",
   },
 ];
 
@@ -64,9 +65,17 @@ export default function ServicesBanner() {
             href={"#"}
             className="inline-block transition-transform duration-300 ease-in-out transform hover:-translate-y-2"
           >
+            <Image
+              src={service.image}
+              alt={service.title}
+              width={300}
+              height={200}
+              className="h-[200px] object-cover"
+            />
+
             <motion.div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center text-center border"
+              className="bg-white shadow-lg overflow-hidden p-6 flex flex-col items-center text-center border"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -79,11 +88,11 @@ export default function ServicesBanner() {
               height={200}
               className="rounded-md mb-4"
             /> */}
-              <div className="p-6 bg-blue-100 rounded-full mb-6">
+              {/* <div className="p-6 bg-blue-100 rounded-full mb-6">
                 {service.icon}
-              </div>
+              </div> */}
 
-              <h3 className="text-xl font-semibold text-gray-900 font-heading">
+              <h3 className="text-2xl font-semibold text-gray-900 font-heading2">
                 {service.title}
               </h3>
               <p className="text-gray-700 mt-2 font-body">

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 // import Image from "next/image";
-import ImageHost from "./image-host";
+import ImageHost from "../ui/image-host";
 
 export default function OurVisionBanner() {
   return (
