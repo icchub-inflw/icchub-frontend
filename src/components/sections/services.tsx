@@ -7,7 +7,6 @@ import { Wrench } from "@/icons/wrench";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import ImageHost from "../ui/image-host";
 
 const services = [
   {
