@@ -19,7 +19,7 @@ export default function HeroBanner() {
       <Navbar />
 
       {/* Dark overlay for readability */}
-      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-40 justify-between">
+      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-20 justify-between">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -35,14 +35,14 @@ export default function HeroBanner() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button
               size="lg"
-              className="bg-blue-500 text-white hover:bg-blue-600 font-heading2 text-xl py-6"
+              className="bg-blue-500 text-white hover:bg-blue-600 font-heading2 text-xl py-8 px-10"
             >
               Submit a Project
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-heading2 text-xl py-6"
+              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-heading2 text-xl py-8 px-10"
             >
               Join as a Trades Pro
             </Button>
