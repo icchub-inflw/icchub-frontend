@@ -9,7 +9,7 @@ export default function HeroBanner() {
   return (
     <section
       id={"about"}
-      className="relative bg-gray-100 py-36 px-6 min-h-[95vh] bg-cover bg-center"
+      className="relative bg-gray-100 py-36 px-6 min-h-[100vh] bg-cover bg-center"
       style={{
         backgroundImage: "url('/iStock-1714802084.jpg",
       }}
@@ -19,7 +19,7 @@ export default function HeroBanner() {
       <Navbar />
 
       {/* Dark overlay for readability */}
-      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-20 justify-between">
+      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-[115px] justify-between">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -32,7 +32,7 @@ export default function HeroBanner() {
           <p className="max-w-4xl mt-4 text-4xl font-heading2 text-white font-bold">
             Powered by AI
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button
               size="lg"
               className="bg-blue-500 text-white hover:bg-blue-600 font-heading2 text-xl py-8 px-10"
