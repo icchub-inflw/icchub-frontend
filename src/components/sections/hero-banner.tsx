@@ -15,7 +15,7 @@ export default function HeroBanner() {
       }}
     >
       {/* bg-gray-400/60 --> using as overlay for hero image */} 
-      <div className="absolute inset-0" />{" "}
+      <div className="absolute inset-0 bg-gray-600/30" />{" "}
       <Navbar />
 
       {/* Dark overlay for readability */}
