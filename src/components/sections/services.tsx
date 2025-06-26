@@ -47,7 +47,7 @@ export default function ServicesBanner() {
   return (
     <section
       id={"services"}
-      className="flex flex-col items-center py-12 px-6 w-full scroll-mt-24"
+      className="flex flex-col items-center py-16 px-6 w-full scroll-mt-24"
     >
       <h2 className="text-xl font-bold text-[#156082] font-heading2 mb-3 text-center">
         Our Services
