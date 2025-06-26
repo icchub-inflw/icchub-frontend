@@ -56,7 +56,7 @@ export default function ContractorDetailsBanner() {
             <div>
               {/* <h3 className="text-2xl font-semibold text-gray-900 font-heading">{detail.title}</h3> */}
               <motion.h3
-                className="text-2xl font-semibold text-gray-900 font-heading relative inline"
+                className="text-xl font-bold text-[#156082] font-heading2 mb-3"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -72,7 +72,7 @@ export default function ContractorDetailsBanner() {
                   style={{ transformOrigin: "left" }}
                 />
               </motion.h3>
-              <p className="text-gray-700 mt-4 font-body">
+              <p className="text-gray-700 mt-4 font-heading2 text-lg">
                 {detail.description}
               </p>
             </div>
