@@ -5,7 +5,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone } from "lucide-react";
+// import { Mail, Phone } from "lucide-react";
 import { Next } from "@/icons/next";
 import { Previous } from "@/icons/previous";
 
