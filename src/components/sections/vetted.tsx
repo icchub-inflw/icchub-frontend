@@ -9,7 +9,7 @@ export default function Vetted() {
   return (
     <section
       id={"how-it-works"}
-      className="flex flex-col md:flex-row items-center justify-center px-6 py-12 w-full mx-auto max-w-7xl gap-10"
+      className="flex flex-col md:flex-row items-center justify-center px-6 py-32 w-full mx-auto max-w-7xl gap-10"
     >
       {/* Left Column - Text Content */}
 

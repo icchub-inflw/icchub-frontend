@@ -99,12 +99,12 @@ export default function ContractorProfile() {
             </h1>
             <p className="mt-2">Toronto, ON</p>
             <div className="flex flex-col items-start mt-4">
-            <p className="flex items-center gap-2 mt-2 text-sm">
+            {/* <p className="flex items-center gap-2 mt-2 text-sm">
               <Mail className="w-5 h-5 text-gray-700" /> johndoe@email.com{" "}
             </p>
             <p className="flex items-center gap-2 mt-2 text-sm">
               <Phone className="w-5 h-5 text-gray-700" /> (123) 456-7890
-            </p>
+            </p> */}
           </div>
           </div>
          
@@ -153,19 +153,27 @@ export default function ContractorProfile() {
               <strong>Location:</strong> Toronto, ON
             </li>*/}
             <li>
-              <strong>Key Services:</strong> General Contracting, Renovation
+              <strong>Key services/titles for project:</strong><br /> General Contracting, Renovation
             </li>
             <li>
               <strong>Years of Experience:</strong> 10+
             </li>
             <li>
-              <strong>Projects Completed This Year:</strong> 15
+              <strong>Total projects completed this year:</strong> 15
             </li>
-            {/* <li>
-              <strong>Contact:</strong> johndoe@email.com | (123) 456-7890
-            </li> */}
+            <li>
+              <strong>Contact:</strong><br />www.website.com <br /> johndoe@email.com <br /> (123) 456-7890
+            </li>
           </ul>
         </div>
+
+        {/* Name
+Location
+Key services/titles for project
+Years of experience
+Total project completed this year
+Contact information (website, email, number) */}
+
 
         {/* Key Quotes Section (Carousel) */}
         <div className="md:col-span-2 border rounded-lg p-6 bg-white shadow-lg relative overflow-hidden">
