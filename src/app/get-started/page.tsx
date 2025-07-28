@@ -112,6 +112,8 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle, Circle, Send } from 'lucide-react';
 import { ChatThinking } from '@/icons/chat-thinking';
+import { useRef } from 'react';
+
 
 const steps = ["Step 1", "Step 2", "Step 3", "Step 4"];
 
@@ -126,6 +128,12 @@ export default function StepProgressChat() {
   const [chatHistory, setChatHistory] = useState<Message[]>([]);
   const [message, setMessage] = useState("");
   const [isBotTyping, setIsBotTyping] = useState(false);
+
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [chatHistory, isBotTyping]);
 
   useEffect(() => {
     const startChat = async () => {
@@ -235,6 +243,8 @@ export default function StepProgressChat() {
               <ChatThinking />
             </motion.div>
           )}
+            {/* Scroll Anchor */}
+           <div ref={bottomRef} />
         </div>
 
         {/* Input Field */}
