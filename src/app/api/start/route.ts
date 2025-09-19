@@ -1,7 +1,7 @@
 // app/api/start/route.ts
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 
-export async function POST(req: NextRequest) {
+export async function POST() {
   const fastApiUrl = 'http://127.0.0.1:8000/start';
 
   try {

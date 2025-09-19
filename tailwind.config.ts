@@ -15,6 +15,10 @@ export default {
         heading2: ["var(--font-bai)", "sans-serif"],
       },
       colors: {
+        brand: {
+          DEFAULT: "#00ACCE",
+          light: "#9ADBE7",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

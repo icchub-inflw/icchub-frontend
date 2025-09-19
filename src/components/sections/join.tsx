@@ -31,7 +31,7 @@ export default function ContractorDetailsBanner() {
   return (
     <section
       id={"details-for-contractors"}
-      className="flex flex-col items-center py-12 px-6 bg-blue-100 w-full mt-16 scroll-mt-24"
+      className="flex flex-col items-center py-12 px-6 bg-brand-light w-full mt-16 scroll-mt-24"
     >
       <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading md:w-1/3">
         Join as a Trades Pro and Get More Leads

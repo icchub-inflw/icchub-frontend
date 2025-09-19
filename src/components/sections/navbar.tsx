@@ -164,6 +164,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Hamburger } from "@/icons/hamburger";
+import Image from "next/image";
 
 interface NavbarProps {
   children?: React.ReactNode;
@@ -230,15 +231,15 @@ export default function Navbar({ children }: NavbarProps) {
         setLogoColor("bg-white");
       } else if (scrollY >= 250 && scrollY < 1350) {
         setBgColor("bg-white shadow-md");
-        setLogoColor("bg-blue-100"); // Light gray further down
+        setLogoColor("bg-brand-light"); // Light gray further down
       } else if (scrollY >= 1350 && scrollY < 2350) {
-        setBgColor("bg-blue-100 shadow-md");
+        setBgColor("bg-brand-light shadow-md");
         setLogoColor("bg-white"); // Light gray further down
       } else if (scrollY >= 2350 && scrollY < 2950) {
         setBgColor("bg-white shadow-md");
-        setLogoColor("bg-blue-100"); // Light gray further down
+        setLogoColor("brand-blue-light"); // Light gray further down
       } else if (scrollY > 2950) {
-        setBgColor("bg-blue-100 shadow-md");
+        setBgColor("bg-brand-light shadow-md");
         setLogoColor("bg-white"); // Light gray further down
       }
     };
@@ -258,10 +259,17 @@ export default function Navbar({ children }: NavbarProps) {
         <div className="container max-w-[100vw] mx-auto flex justify-between items-center">
           {/* Logo */}
           <Link href={"/"} className="flex items-center gap-2">
-            <div className={`p-4 rounded-full text-lg font-bold ${logoColor}`}>
+            {/* <div className={`p-4 rounded-full text-lg font-bold ${logoColor}`}>
               flw
             </div>
-            <span className="text-2xl font-semibold">ICCHub.ai</span>
+            <span className="text-2xl font-semibold">ICCHub.ai</span> */}
+            <Image
+              src="/inflw.mainlogo.png"   // ✅ no /public here
+              alt="Main logo"
+              width={160}
+              height={40}
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -313,47 +321,42 @@ export default function Navbar({ children }: NavbarProps) {
           <div className="hidden md:flex gap-6 text-lg">
             <Link
               href="#about"
-              className={`hover:text-blue-500 ${
-                activeSection === "/about" ? "border-b-2 border-blue-500" : ""
-              }`}
+              className={`hover:text-blue-500 ${activeSection === "/about" ? "border-b-2 border-blue-500" : ""
+                }`}
             >
               About
             </Link>
             <Link
               href="#how-it-works"
-              className={`hover:text-blue-500 ${
-                activeSection === "/how-it-works"
+              className={`hover:text-blue-500 ${activeSection === "/how-it-works"
                   ? "border-b-2 border-blue-500"
                   : ""
-              }`}
+                }`}
             >
               How it Works
             </Link>
             <Link
               href="#services"
-              className={`hover:text-blue-500 ${
-                activeSection === "/services"
+              className={`hover:text-blue-500 ${activeSection === "/services"
                   ? "border-b-2 border-blue-500"
                   : ""
-              }`}
+                }`}
             >
               Services
             </Link>
             <Link
               href="#details-for-contractors"
-              className={`hover:text-blue-500 ${
-                activeSection === "/details-for-contractors"
+              className={`hover:text-blue-500 ${activeSection === "/details-for-contractors"
                   ? "border-b-2 border-blue-500"
                   : ""
-              }`}
+                }`}
             >
               Details for Trades Pros
             </Link>
             <Link
               href="#faq"
-              className={`hover:text-blue-500 ${
-                activeSection === "/faq" ? "border-b-2 border-blue-500" : ""
-              }`}
+              className={`hover:text-blue-500 ${activeSection === "/faq" ? "border-b-2 border-blue-500" : ""
+                }`}
             >
               FAQ
             </Link>

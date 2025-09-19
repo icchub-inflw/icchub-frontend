@@ -105,6 +105,8 @@
 //   );
 // }
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 
 'use client';
 
@@ -123,7 +125,7 @@ type Message = {
 };
 
 export default function StepProgressChat() {
-  const [completedSteps, setCompletedSteps] = useState<number>(0);
+  const [completedSteps, setCompletedSteps] = useState<number>(0); 
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [chatHistory, setChatHistory] = useState<Message[]>([]);
   const [message, setMessage] = useState("");
@@ -183,11 +185,11 @@ export default function StepProgressChat() {
     }
   };
 
-  const handleNextStep = () => {
-    if (completedSteps < steps.length) {
-      setCompletedSteps((prev) => prev + 1);
-    }
-  };
+  // const handleNextStep = () => {
+  //   if (completedSteps < steps.length) {
+  //     setCompletedSteps((prev) => prev + 1);
+  //   }
+  // };
 
   return (
     <div className="flex h-[80vh] flex-col md:flex-row">

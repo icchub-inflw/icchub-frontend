@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Instagram, Youtube } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
+import { LinkedIn } from '@/icons/linkedin';
 
 export default function Footer() {
   return (
@@ -36,14 +37,14 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold">Follow Us</h3>
           <div className="flex justify-center space-x-6 mt-4">
-            <Link href="https://instagram.com" target="_blank" className="hover:text-blue-400">
+            <Link href="https://www.instagram.com/inflw.ai/?igsh=MTZ6bXRjcmk5aTNhaQ%3D%3D&utm_source=qr#" target="_blank" className="hover:text-blue-400">
               <Instagram size={24} />
             </Link>
             <Link href="https://facebook.com" target="_blank" className="hover:text-blue-400">
               <Facebook size={24} />
             </Link>
-            <Link href="https://youtube.com" target="_blank" className="hover:text-red-400">
-              <Youtube size={24} />
+            <Link href="https://www.linkedin.com/company/inflw/" target="_blank" className="hover:text-blue-400">
+             <LinkedIn />
             </Link>
           </div>
         </div>
