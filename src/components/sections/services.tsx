@@ -69,7 +69,7 @@ export default function ServicesBanner() {
               alt={service.title}
               width={300}
               height={200}
-              className="h-[200px] object-cover"
+              className="w-full h-[200px] object-cover"
             />
 
             <motion.div
@@ -91,7 +91,7 @@ export default function ServicesBanner() {
                 {service.icon}
               </div> */}
 
-              <h3 className="text-2xl font-semibold text-gray-900 font-heading2">
+              <h3 className="text-2xl font-semibold text-[#156082] font-heading2">
                 {service.title}
               </h3>
               <p className="text-gray-700 mt-2 font-body">

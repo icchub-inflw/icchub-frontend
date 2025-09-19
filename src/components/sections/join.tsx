@@ -33,12 +33,12 @@ export default function ContractorDetailsBanner() {
       id={"details-for-contractors"}
       className="flex flex-col items-center py-12 px-6 bg-brand-light w-full mt-16 scroll-mt-24"
     >
-      <h2 className="text-5xl font-bold text-gray-900 mb-6 text-center font-heading md:w-1/3">
+      <h2 className="text-2xl font-bold text-[#156082] mb-6 font-heading2 text-4xl">
         Join as a Trades Pro and Get More Leads
       </h2>
       <Link
         href="#"
-        className="bg-blue-500 text-white hover:bg-blue-600 font-body text-xl py-4 px-8 mb-12 rounded-md"
+        className="bg-brand text-white hover:bg-blue-600 font-body text-xl py-4 px-8 mb-12 rounded-md"
       >
         Start your application
       </Link>{" "}
@@ -52,7 +52,7 @@ export default function ContractorDetailsBanner() {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="bg-blue-100 p-3 rounded">{detail.icon}</div>
+            <div className="bg-[#d7eff5] p-3 rounded">{detail.icon}</div>
             <div>
               {/* <h3 className="text-2xl font-semibold text-gray-900 font-heading">{detail.title}</h3> */}
               <motion.h3

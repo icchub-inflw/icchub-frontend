@@ -35,14 +35,14 @@ export default function HeroBanner() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button
               size="lg"
-              className="bg-blue-500 text-white hover:bg-blue-600 font-heading2 text-xl py-8 px-10"
+              className="bg-brand text-white hover:text-brand hover:bg-gray-100 font-heading2 text-xl py-8 px-10"
             >
               Submit a Project
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-blue-500 font-heading2 text-xl py-8 px-10"
+              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-brand font-heading2 text-xl py-8 px-10"
             >
               Join as a Trades Pro
             </Button>

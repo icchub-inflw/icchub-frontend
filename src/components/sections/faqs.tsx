@@ -144,16 +144,15 @@ export default function FAQAccordion() {
       id={"faq"}
       className="flex flex-col items-center py-12 px-6 bg-gray-100 w-full scroll-mt-24"
     >
-      <h2 className="text-2xl font-bold text-gray-900 mb-6 font-heading2 text-4xl">
+      <h2 className="text-2xl font-bold text-[#156082] mb-6 font-heading2 text-4xl text-center md:text-left">
         Frequently Asked Questions
       </h2>
-      <Tabs defaultValue="account" className="w-full">
+      <Tabs defaultValue="homeowners" className="w-full">
         <TabsList>
-          <TabsTrigger value="account">For Homeowners</TabsTrigger>
-          <TabsTrigger value="password">For Trades Pros</TabsTrigger>
+          <TabsTrigger value="homeowners">For Homeowners</TabsTrigger>
+          <TabsTrigger value="tradespros">For Trades Pros</TabsTrigger>
         </TabsList>
-        <TabsContent value="account">
-          {/* <h1 className="text-center text-3xl">{" Homeowner FAQs"}</h1> */}
+        <TabsContent value="homeowners">
           <Accordion
             type="single"
             collapsible
@@ -173,8 +172,7 @@ export default function FAQAccordion() {
             ))}
           </Accordion>
         </TabsContent>
-        <TabsContent value="password">
-          {/* <h1>{" Contractor FAQs"}</h1> */}
+        <TabsContent value="tradespros">
           <Accordion
             type="single"
             collapsible

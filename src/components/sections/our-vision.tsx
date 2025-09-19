@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 // import Image from "next/image";
-import ImageHost from "../ui/image-host";
+import Image from "next/image";
 
 export default function OurVisionBanner() {
   return (
@@ -16,14 +16,7 @@ export default function OurVisionBanner() {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
       >
-        {/* <Image
-          src="https://via.placeholder.com/500x300" // Replace with actual image
-          alt="Our Vision"
-          width={500}
-          height={300}
-          className="rounded-lg shadow-lg"
-        /> */}
-        <ImageHost src="/iStock-639290490.jpg" />
+        <Image src="/iStock-639290490.jpg" alt="" height={1000} width={1000} className="h-[475px] object-cover object-center" />
       </motion.div>
       {/* Right Column - Image */}
       <motion.div

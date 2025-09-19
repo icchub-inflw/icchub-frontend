@@ -2,12 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-// import { useState } from "react";
 
 const bannerContent = [
   {
     text: "Seamless Planning & Execution",
-    // image: "https://via.placeholder.com/400x250",
     reverse: false,
 
     image:
@@ -20,7 +18,6 @@ const bannerContent = [
 
   {
     text: "High-Quality Craftsmanship",
-    // image: "https://via.placeholder.com/400x250",
     reverse: true,
     image:
       "https://images.unsplash.com/photo-1625864667443-bc321825fcce?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -37,7 +34,6 @@ const bannerContent = [
   },
   {
     text: "Innovative Design Solutions",
-    // image: "https://via.placeholder.com/400x250",
     reverse: false,
     image:
       "https://images.unsplash.com/photo-1554376279-d0bc03ddea1a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -51,7 +47,6 @@ const bannerContent = [
   },
   {
     text: "Client-Centric Approach",
-    // image: "https://via.placeholder.com/400x250",
     reverse: true,
     image:
       "https://images.unsplash.com/photo-1527697911963-20cb424e9608?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -65,12 +60,12 @@ const bannerContent = [
 ];
 
 export default function AnimatedFourRowBanner() {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-const currentIndex = 0
+  //   const [currentIndex, setCurrentIndex] = useState(0);
+  const currentIndex = 0
 
   return (
     <section id={'test'} className="flex flex-col items-center py-12 px-6 bg-gray-100 w-full">
-         <div className="p-4 mt-8 bg-blue-100">
+      <div className="p-4 mt-8 bg-blue-100">
         <h1 className="max-w-[1200px] text-center mx-auto text-3xl font-semibold font-heading">
           How ICCHub.ai Works
         </h1>
@@ -79,9 +74,8 @@ const currentIndex = 0
         {bannerContent.map((item, index) => (
           <motion.div
             key={index}
-            className={`flex flex-col md:flex-row items-center gap-6 ${
-              item.reverse ? "md:flex-row-reverse" : ""
-            }`}
+            className={`flex flex-col md:flex-row items-center gap-6 ${item.reverse ? "md:flex-row-reverse" : ""
+              }`}
             initial={{ opacity: 0, x: item.reverse ? 50 : -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -95,17 +89,11 @@ const currentIndex = 0
                 height={250}
                 className="rounded-lg shadow-lg"
               />
-              {/* <ImageHost
-                width={800}
-                height={600}
-                src="https://images.unsplash.com/photo-1554470938-85886688c6e6?q=80&w=3552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              /> */}
             </div>
 
             <div
-              className={`text-left flex ${
-                currentIndex % 2 === 0 ? "order-first" : "order-last"
-              }`}
+              className={`text-left flex ${currentIndex % 2 === 0 ? "order-first" : "order-last"
+                }`}
             >
               <div className="text-8xl text-gray-400 px-4 border-r-4 border-blue-300 font-heading">
                 <h1>{item.step}</h1>

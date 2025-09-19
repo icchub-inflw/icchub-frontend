@@ -4,7 +4,8 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
-  const fastApiUrl = 'http://127.0.0.1:8000/chat';
+  // const fastApiUrl = 'http://127.0.0.1:8000/chat';
+  const fastApiUrl = 'https://web-production-8c33f.up.railway.app/api/v1/chat'
 
   try {
     const response = await fetch(fastApiUrl, {
