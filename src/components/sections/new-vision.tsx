@@ -2,7 +2,7 @@ export default function VisionSection() {
     return (
       <section className="w-full">
         {/* Title bar */}
-        <div className="bg-[#0E3A44] text-center py-4">
+        <div className="bg-[#0E3A44] text-center py-6">
           <h2 className="text-xl font-bold text-brand font-heading2">
           Our Vision
         </h2>
