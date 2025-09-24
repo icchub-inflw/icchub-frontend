@@ -102,7 +102,7 @@ export default function Navbar({ children }: NavbarProps) {
           {/* Main Navigation Logo */}
           <Link href={"/"} className="flex items-center gap-2">
             <Image
-              src="/inflw.mainlogo.png" 
+              src="/inflw.mainlogo.png"
               alt="Main logo"
               width={160}
               height={40}
@@ -122,8 +122,8 @@ export default function Navbar({ children }: NavbarProps) {
             <Link
               href="#how-it-works"
               className={`hover:text-blue-500 ${activeSection === "/how-it-works"
-                  ? "border-b-2 border-blue-500"
-                  : ""
+                ? "border-b-2 border-blue-500"
+                : ""
                 }`}
             >
               How it Works
@@ -131,8 +131,8 @@ export default function Navbar({ children }: NavbarProps) {
             <Link
               href="#services"
               className={`hover:text-blue-500 ${activeSection === "/services"
-                  ? "border-b-2 border-blue-500"
-                  : ""
+                ? "border-b-2 border-blue-500"
+                : ""
                 }`}
             >
               Services
@@ -140,8 +140,8 @@ export default function Navbar({ children }: NavbarProps) {
             <Link
               href="#details-for-contractors"
               className={`hover:text-blue-500 ${activeSection === "/details-for-contractors"
-                  ? "border-b-2 border-blue-500"
-                  : ""
+                ? "border-b-2 border-blue-500"
+                : ""
                 }`}
             >
               Details for Trades Pros
@@ -158,8 +158,10 @@ export default function Navbar({ children }: NavbarProps) {
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <Link
-              className={`px-6 py-3 ${logoColor} text-black hover:bg-blue-200 font-body text-lg rounded-md`}
-              href="/get-started"
+              className={`px-6 py-3 ${logoColor} text-black hover:bg-brand-light font-body text-lg rounded-md`}
+              // href="/get-started"
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdk21aY6OYbuCLXGT0hnuRzqEPGLL9D0Xixc-nNdFfxYzd2dg/viewform"
             >{`Let's Get Started`}</Link>
           </div>
 
@@ -217,8 +219,10 @@ export default function Navbar({ children }: NavbarProps) {
                   FAQ
                 </Link>
                 <Link
-                  className={`px-6 py-3 bg-brand text-black hover:bg-blue-200 font-body text-lg rounded-md`}
-                  href="/get-started"
+                  className={`px-6 py-3 bg-brand text-black hover:bg-brand-light font-body text-lg rounded-md`}
+                  // href="/get-started"
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdk21aY6OYbuCLXGT0hnuRzqEPGLL9D0Xixc-nNdFfxYzd2dg/viewform"
                 >{`Let's Get Started`}</Link>
               </div>
             </SheetContent>

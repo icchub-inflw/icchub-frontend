@@ -27,14 +27,14 @@ const homeownerFaqs = [
       "No cost to homeowners. trades pros pay a fee to be featured on the platform, in addition to a small transaction fee for processing each payment within the platform.",
     ],
   },
-  {
-    id: 3,
-    question: "Do I get multiple quotes – and if so, how many?",
-    answer: [
-      "inflw currently supports the pairing with trades pros and scheduling of the first encounters to get started right away. After the trades pros see your project, they will provide you with a quote.",
-      "If you no longer want to work with the team proposed, you can follow up with inflw for a new proposed team and quote. Please note that the trades pros have base hourly rates and they review your job mainly to determine the hours of work needed to complete the job.",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   question: "Do I get multiple quotes – and if so, how many?",
+  //   answer: [
+  //     "inflw currently supports the pairing with trades pros and scheduling of the first encounters to get started right away. After the trades pros see your project, they will provide you with a quote.",
+  //     "If you no longer want to work with the team proposed, you can follow up with inflw for a new proposed team and quote. Please note that the trades pros have base hourly rates and they review your job mainly to determine the hours of work needed to complete the job.",
+  //   ],
+  // },
   {
     id: 4,
     question: "Why should I trust your trades pro network",
@@ -43,43 +43,43 @@ const homeownerFaqs = [
       "Moreover, we provide the option for you to have an inspector review the jobs at the mid-point and end-point to help ensure trades pros remain on task to provide you with the best service possible.",
     ],
   },
-  {
-    id: 5,
-    question: "Are all trades pros on here general trades pros/ foremen?",
-    answer: [
-      "inflw pulls in trades pros at the subtrades pro level. Subtrades pros are tradespersons who specialize in a particular area of work (e.g., plumbing) and are typically hired by a general trades pro, however at an additional fee (i.e., about 20-30% extra). Our system aims to help keep prices affordable by leveraging AI to create teams with the skill set needed to meet your project needs.",
-    ],
-  },
-  {
-    id: 6,
-    question: "How will the quality of the project be monitored?",
-    answer: [
-      "inflw will give you the option to request an inspector to review at the mid- and end- stages of the project.",
-    ],
-  },
-  {
-    id: 7,
-    question:
-      "Can inflw provide recommendations for other professional services related to my home renovation (i.e., architects or interior designers)?",
-    answer: [
-      "inflw does not currently offer architect or interior designer services.",
-    ],
-  },
+  // {
+  //   id: 5,
+  //   question: "Are all trades pros on here general trades pros/ foremen?",
+  //   answer: [
+  //     "inflw pulls in trades pros at the subtrades pro level. Subtrades pros are tradespersons who specialize in a particular area of work (e.g., plumbing) and are typically hired by a general trades pro, however at an additional fee (i.e., about 20-30% extra). Our system aims to help keep prices affordable by leveraging AI to create teams with the skill set needed to meet your project needs.",
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   question: "How will the quality of the project be monitored?",
+  //   answer: [
+  //     "inflw will give you the option to request an inspector to review at the mid- and end- stages of the project.",
+  //   ],
+  // },
+  // {
+  //   id: 7,
+  //   question:
+  //     "Can inflw provide recommendations for other professional services related to my home renovation (i.e., architects or interior designers)?",
+  //   answer: [
+  //     "inflw does not currently offer architect or interior designer services.",
+  //   ],
+  // },
   {
     id: 8,
     question: "What types of renovation projects do you do?",
     answer: [
-      "Currently, we support kitchen, bathroom, living room and dining room related renovations, which may include but are not limited to plumbing, carpentry, or electrical work.",
+      "We are currently building out our trades pro network to support projects including, but not limited to - kitchen, bathroom, living room and dining room renovations.",
     ],
   },
-  {
-    id: 9,
-    question:
-      "Does inflw have a restriction around the size of projects they will take on?",
-    answer: [
-      "inflw supports small to medium scale renovations, but not handy work projects.",
-    ],
-  },
+  // {
+  //   id: 9,
+  //   question:
+  //     "Does inflw have a restriction around the size of projects they will take on?",
+  //   answer: [
+  //     "inflw supports small to medium scale renovations, but not handy work projects.",
+  //   ],
+  // },
   {
     id: 10,
     question: "Are there ratings I can review?",
@@ -101,14 +101,14 @@ const contractorFaqs = [
     id: 11,
     question: "Who can use the platform",
     answer: [
-      "Inflw pulls in trades pros at the subtrades pro level (i.e., tradespersons who specialize in a particular area of work [e.g., plumbing]). We then leverage AI to create teams with the skill sets needed to meet homeowner project needs.",
+      "All trades pros are welcomed to sign up - our platform leverages AI to create teams and handles project staffing to meet homeowner project needs, and ensure to maximize the utilization of those within our network.",
     ],
   },
   {
     id: 12,
     question: "How do I get leads?",
     answer: [
-      "We ask homeowners to describe their project as best as they can, asking additional prompts to ensure we get the preliminary detail you need! We then scan our trades pro network, to assess the availability and alignment of skill sets required for the job. Homeowners gets the opportunity to review your profile and decide on whether to schedule a meeting with you in person (no initial bids needed).",
+      "We ask homeowners to describe their project as best as they can, asking additional prompts to ensure we get the preliminary detail you need! We then scan our trades pro network, to assess the availability and alignment of skill sets required for the job. Homeowners gets the opportunity to review your profile and decide on whether to schedule a meeting with you in person (no initial bids are required).",
     ],
   },
   {
@@ -116,23 +116,25 @@ const contractorFaqs = [
     question: "How do I get paid?",
     answer: [
       (<><strong>First encounter:</strong> homeowners will be required to pay for your initial site visit, a fee of which will be reduced from the total project cost to be paid.</>),
-      (<><strong>Project downpayment & milestones:</strong> once a contract is signed between both parties to begin the work, an initial down payment will be paid, followed by a final payment at the completion of the project. Inflw will support you both in drafting a renovation project contract and securely set up your payment plan.</>),
+      (<><strong>Project downpayment & milestones:</strong> once a contract is signed between both parties to begin the work, an initial down payment will be paid, followed by a final payment at the completion of the project. Our system
+        will both provide support in establishing a contractual agreement with the homeowner, and process payments.</>),
     ],
   },
   {
     id: 14,
-    question: "How do I join the trades pro network",
+    question: "How do I join the trades pros network?",
     answer: [
-      "We ask that you complete the trades pros’ applications through which your professional background will be assessed. Provided you meet all of the eligibility requirements you will be invited into the network!",
+      "To get the process started, please join our waitlist!",
     ],
   },
   {
     id: 15,
     question: "What are the fees for using the platform",
     answer: [
-      (<><strong>Monthly payment:</strong> trades pros are expected to pay a fee to be featured on the platform and paired with projects. Transaction fees: A small transaction fee will be made for each processed payment within the platform. Please note the transaction fees will be waived for your first project within the platform!</>),
+      (<><strong>Monthly payment:</strong> trades pros are expected to pay a fee to be featured on the platform and paired with projects. Please note that during the
+beta phase, monthly fees will be waived.</>),
 
-      (<><strong>Transaction fees:</strong> A small transaction fee will be made for each processed payment within the platform. <span className="italic">Please note the transaction fees will be waived for your first project within the platform!</span></>),
+      (<><strong>Transaction fees:</strong> A small transaction fee will be made for each processed payment within the platform.</>),
 
     ],
   },

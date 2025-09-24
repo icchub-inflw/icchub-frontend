@@ -7,13 +7,14 @@ import OurVisionBanner from "@/components/sections/our-vision";
 import Vetted from "@/components/sections/vetted";
 import WorkTogetherSection from "@/components/sections/work-together";
 import VideoPlayer from "@/components/sections/in-action";
+import VisionSection from "@/components/sections/new-vision";
 
 export default function Home() {
   return (
     <div className="">
       <HeroBanner />
-      <OurVisionBanner />
-    
+      {/* <OurVisionBanner /> */}
+      <VisionSection />
       <AnimatedStepsRow />
       <VideoPlayer />
       <Vetted />

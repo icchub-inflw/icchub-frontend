@@ -19,7 +19,7 @@ export default function HeroBanner() {
       <Navbar />
 
       {/* Dark overlay for readability */}
-      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-[115px] justify-between">
+      <div className="relative max-w-[100vw] mx-auto flex flex-col md:flex-row items-center top-[75px] justify-between">
         <motion.div
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
