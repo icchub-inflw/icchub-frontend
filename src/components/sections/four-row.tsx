@@ -67,7 +67,7 @@ export default function AnimatedFourRowBanner() {
     <section id={'test'} className="flex flex-col items-center py-12 px-6 bg-gray-100 w-full">
       <div className="p-4 mt-8 bg-blue-100">
         <h1 className="max-w-[1200px] text-center mx-auto text-3xl font-semibold font-heading">
-          How ICCHub.ai Works
+          How inflw.ai Works
         </h1>
       </div>
       <div className="flex flex-col gap-12 w-full max-w-6xl">

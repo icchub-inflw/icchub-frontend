@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 // import { Mail, Phone } from "lucide-react";
 import { Next } from "@/icons/next";
 import { Previous } from "@/icons/previous";
+import Navbar from "@/components/sections/navbar";
 
 
 const quotes = [
@@ -64,6 +65,7 @@ export default function ContractorProfile() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
+      <Navbar />
       {/* Header Section */}
       <div className="bg-blue-100 py-6 px-4 rounded-lg">
         {/* <h1 className="text-3xl font-bold font-heading text-gray-900 after:content-[''] after:block after:w-12 after:h-[4px] after:bg-blue-400 after:mt-1">

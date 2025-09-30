@@ -62,12 +62,12 @@ export default function AnimatedStepsRow() {
       id={"how-it-works"}
       className="flex flex-col py-12 px-4 sm:px-6 bg-gray-100 w-full scroll-mt-24"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* <h2 className="text-xl font-bold text-[#156082] font-heading2 mb-3 font-heading items-start text-center md:text-left">
           Our Approach
         </h2> */}
         {/* <p className="text-gray-700 text-3xl font-heading2 mb-8 max-w-7xl text-center md:text-left"> */}
-          {/* ICCHub.ai’s chatbot, INFLW, was developed to support homeowners in
+          {/* inflw.ai’s chatbot, INFLW, was developed to support homeowners in
           sourcing talent within their area and of high quality. Home
           renovations can involve multiple tradespersons, so INFLW ensures you
           know who exactly will be working on your project, (i.e., skill set,
@@ -76,7 +76,7 @@ export default function AnimatedStepsRow() {
           pros within a given area, and supports both parties in managing the
           project workflow, including contracting and payment processing. */}
         {/* </p> */}
-        <div className="relative flex flex-col sm:flex-row items-start w-full max-w-7xl justify-center">
+        <div className="relative flex flex-col sm:flex-row items-start w-full max-w-6xl justify-center">
           {/* Dotted Line Animation - Responsive */}
           {/* <motion.div
             className="absolute hidden sm:block top-16 left-[10%] w-[90%] h-1 border-dotted border-blue-500"

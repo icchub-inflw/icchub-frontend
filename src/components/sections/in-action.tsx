@@ -7,7 +7,7 @@ export default function VideoPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center px-4 max-w-7xl mx-auto py-20">
+    <div className="flex flex-col justify-center items-center px-4 max-w-6xl mx-auto py-20">
       <motion.div
         className="w-full text-center md:text-left"
         initial={{ opacity: 0, x: -50 }}
@@ -24,7 +24,7 @@ export default function VideoPlayer() {
           project teams.
         </p>
       </motion.div>
-      <div className="relative w-full max-w-7xl my-8 aspect-video rounded-2xl overflow-hidden shadow-lg">
+      <div className="relative w-full max-w-6xl my-8 aspect-video rounded-2xl overflow-hidden shadow-lg">
         {isPlaying ? (
           <iframe
             className="w-full h-full"

@@ -176,7 +176,7 @@ export default function Navbar({ children }: NavbarProps) {
             {/* Side Drawer */}
             <SheetContent side="left" className="w-64 bg-white p-6 shadow-lg">
               <div className="flex justify-between items-center">
-                <span className="text-xl font-semibold">ICCHub.ai</span>
+                <span className="text-xl font-semibold">inflw.ai</span>
                 <Button
                   variant="ghost"
                   onClick={() => setIsOpen(false)}

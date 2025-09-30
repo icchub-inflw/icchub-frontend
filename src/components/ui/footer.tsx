@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 text-center sm:text-left md:grid-cols-3 gap-8 items-start">
         {/* Left Section - Brand & Legal Links */}
         <div className="flex flex-col items-center md:items-start">
-          <h2 className="text-xl font-bold">ICCHub.ai</h2>
+          <h2 className="text-xl font-bold">inflw.ai</h2>
           <p className="text-sm text-gray-400 mt-2">Simplifying your next renovation project with inflw.</p>
           <div className="mt-4 text-sm">
             <Link href="/" className="text-gray-300 hover:text-white">Home</Link>
@@ -51,7 +51,7 @@ export default function Footer() {
       </div>
       
       {/* Bottom Copyright Section */}
-      <div className="mt-6 text-center text-sm text-gray-500">© {new Date().getFullYear()} ICCHub.ai. All rights reserved.</div>
+      <div className="mt-6 text-center text-sm text-gray-500">© {new Date().getFullYear()} inflw.ai. All rights reserved.</div>
     </footer>
   );
 }

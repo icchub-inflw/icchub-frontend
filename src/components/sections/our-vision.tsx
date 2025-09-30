@@ -30,7 +30,7 @@ export default function OurVisionBanner() {
           Our Vision
         </h2>
         <p className="mt-4 text-gray-700 text-3xl font-heading2">
-          {/* ICCHub.ai believes in simplifying the process of sourcing quality and
+          {/* inflw.ai believes in simplifying the process of sourcing quality and
           trustworthy contractors that meet your renovation needs, reducing the
           delays in starting and headaches throughout the project! */}
           The Inflw Construction Community Hub → inflw aims to simplify small to medium-scale home renovations.

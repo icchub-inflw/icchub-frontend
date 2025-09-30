@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Loader() {
   const [progress, setProgress] = useState(0);
@@ -26,28 +27,31 @@ export default function Loader() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="flex items-center gap-2 mb-4"
+          className="flex items-center gap-2 mb-4 justify-center flex-col"
         >
           <motion.div
-            className="bg-blue-100 p-2 rounded-full text-lg font-bold"
+            className="p-2 text-lg font-bold"
             initial={{ y: 0 }}
             animate={{ y: [0, -10, 0, -5, 0] }} // Bouncing effect
             transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
           >
-            flw
+            {/* flw */}
+            <Image src={'/inflw.stacked.colour.png'} alt="" height={1000} width={1000} className="w-20" />
+
           </motion.div>
           <motion.span
-            className="text-xl font-semibold"
+            className="text-md"
             initial={{ y: 0 }}
             animate={{ y: [0, 10, 0, 5, 0] }} // Bouncing effect
             transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
           >
-            ICCHub.ai
+            inflw.ai
+
           </motion.span>
         </motion.div>
         <div className="w-64 h-2 bg-gray-300 rounded-full overflow-hidden">
         <motion.div
-          className="h-full bg-blue-500"
+          className="h-full bg-brand"
           initial={{ width: "0%" }}
           animate={{ width: `${progress}%` }}
           transition={{ duration: 0.1, ease: "linear" }}
