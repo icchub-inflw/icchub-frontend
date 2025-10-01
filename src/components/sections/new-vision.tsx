@@ -31,13 +31,13 @@ export default function VisionSection() {
                             within a given area.
                         </p>
 
-                        <p className="text-[15px] md:text-base leading-7 mt-4 text-gray-900">
+                        <p className="text-[15px] md:text-lg leading-7 mt-4 text-gray-900">
                             We <span className="font-semibold">support</span> both parties in{" "}
                             <span className="font-semibold">managing the project workflow</span>, including
                             contracting and payment processing.
                         </p>
 
-                        <p className="text-[15px] md:text-base leading-7 mt-4 text-gray-800 italic">
+                        <p className="text-[15px] md:text-lg leading-7 mt-4 text-gray-800 italic">
                             Homeowners simply share details about their project, and we build their
                             team of vetted trades pros
                         </p>

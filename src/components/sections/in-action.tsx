@@ -18,7 +18,7 @@ export default function VideoPlayer() {
         <h2 className="text-xl font-bold text-[#156082] font-heading2">
           In Action
         </h2>
-        <p className="mt-4 text-gray-700 text-3xl font-heading2 italic">
+        <p className="mt-4 text-gray-700 text-3xl font-heading2">
           Chat with inflw to reduce the endless search time required to find the
           right trades and add robustness in final decision-making for your
           project teams.

@@ -114,15 +114,15 @@ export default function Navbar({ children }: NavbarProps) {
           <div className="hidden md:flex gap-6 text-lg">
             <Link
               href="#about"
-              className={`hover:text-blue-500 ${activeSection === "/about" ? "border-b-2 border-blue-500" : ""
+              className={`hover:text-brand ${activeSection === "/about" ? "border-b-2 border-brand" : ""
                 }`}
             >
               About
             </Link>
             <Link
               href="#how-it-works"
-              className={`hover:text-blue-500 ${activeSection === "/how-it-works"
-                ? "border-b-2 border-blue-500"
+              className={`hover:text-brand ${activeSection === "/how-it-works"
+                ? "border-b-2 border-brand"
                 : ""
                 }`}
             >
@@ -130,8 +130,8 @@ export default function Navbar({ children }: NavbarProps) {
             </Link>
             <Link
               href="#services"
-              className={`hover:text-blue-500 ${activeSection === "/services"
-                ? "border-b-2 border-blue-500"
+              className={`hover:text-brand ${activeSection === "/services"
+                ? "border-b-2 border-brand"
                 : ""
                 }`}
             >
@@ -139,8 +139,8 @@ export default function Navbar({ children }: NavbarProps) {
             </Link>
             <Link
               href="#details-for-contractors"
-              className={`hover:text-blue-500 ${activeSection === "/details-for-contractors"
-                ? "border-b-2 border-blue-500"
+              className={`hover:text-brand ${activeSection === "/details-for-contractors"
+                ? "border-b-2 border-brand"
                 : ""
                 }`}
             >
@@ -148,7 +148,7 @@ export default function Navbar({ children }: NavbarProps) {
             </Link>
             <Link
               href="#faq"
-              className={`hover:text-blue-500 ${activeSection === "/faq" ? "border-b-2 border-blue-500" : ""
+              className={`hover:text-brand ${activeSection === "/faq" ? "border-b-2 border-blue-500" : ""
                 }`}
             >
               FAQ

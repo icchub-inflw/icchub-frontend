@@ -67,7 +67,7 @@ export default function ContractorProfile() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       <Navbar />
       {/* Header Section */}
-      <div className="bg-blue-100 py-6 px-4 rounded-lg">
+      <div className="bg-brand-light py-6 px-4 rounded-lg">
         {/* <h1 className="text-3xl font-bold font-heading text-gray-900 after:content-[''] after:block after:w-12 after:h-[4px] after:bg-blue-400 after:mt-1">
           John Doe
         </h1>
@@ -76,7 +76,7 @@ export default function ContractorProfile() {
           <Mail className="w-5 h-5 text-gray-700" /> johndoe@email.com |  <Phone className="w-5 h-5 text-gray-700" /> (123) 456-7890
         </p> */}
 
-        <div className="relative bg-blue-100 py-6 px-4 rounded-lg h-[10vh]">
+        <div className="relative bg-brand-light py-6 px-4 rounded-lg h-[10vh]">
           {/* Profile Image Overlapping Header */}
           <div className="absolute md:left-[15%] left-[50%] transform -translate-x-1/2 -bottom-12">
             <Image
@@ -96,7 +96,7 @@ export default function ContractorProfile() {
         <div className="flex flex-col border rounded-lg p-4 bg-white shadow-lg">
           {/* Profile Image */}
           <div className="">
-            <h1 className="text-4xl font-bold font-heading text-gray-900 after:content-[''] after:block after:w-12 after:h-[4px] after:bg-blue-400 after:mt-1">
+            <h1 className="text-4xl font-bold font-heading text-gray-900 after:content-[''] after:block after:w-12 after:h-[4px] after:bg-brand after:mt-1">
               John Doe
             </h1>
             <p className="mt-2">Toronto, ON</p>
@@ -200,7 +200,7 @@ Contact information (website, email, number) */}
       </div>
 
       {/* Past Project Gallery with Pagination */}
-      <div className="mt-12 bg-blue-100 py-6 px-4 text-center rounded-lg">
+      <div className="mt-12 bg-brand-light py-6 px-4 text-center rounded-lg">
         <h2 className="text-2xl font-bold text-gray-900 font-heading">
           Past Project Gallery
         </h2>
@@ -230,13 +230,13 @@ Contact information (website, email, number) */}
         <div className="flex justify-center mt-4 space-x-4">
           <button
             onClick={prevPage}
-            className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-600"
+            className="bg-brand text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-700"
           >
             <Previous />
           </button>
           <button
             onClick={nextPage}
-            className="bg-gray-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-600"
+            className="bg-brand text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-700"
           >
             <Next />
           </button>

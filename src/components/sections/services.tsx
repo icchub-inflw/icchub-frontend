@@ -74,7 +74,7 @@ export default function ServicesBanner() {
 
             <motion.div
               key={index}
-              className="bg-white shadow-lg overflow-hidden p-6 flex flex-col items-center text-center border"
+              className="transition- duration-300 ease-in-out bg-white shadow-lg overflow-hidden p-6 flex flex-col items-center text-center border"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}

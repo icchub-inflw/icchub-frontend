@@ -39,7 +39,7 @@ export default function Loader() {
             <Image src={'/inflw.stacked.colour.png'} alt="" height={1000} width={1000} className="w-20" />
 
           </motion.div>
-          <motion.span
+          {/* <motion.span
             className="text-md"
             initial={{ y: 0 }}
             animate={{ y: [0, 10, 0, 5, 0] }} // Bouncing effect
@@ -47,7 +47,7 @@ export default function Loader() {
           >
             inflw.ai
 
-          </motion.span>
+          </motion.span> */}
         </motion.div>
         <div className="w-64 h-2 bg-gray-300 rounded-full overflow-hidden">
         <motion.div
