@@ -36,8 +36,9 @@ export default function ContractorDetailsBanner() {
       <h2 className="text-2xl font-bold text-[#156082] mb-6 font-heading2 text-4xl">
         Join as a Trades Pro and Get More Leads
       </h2>
+
       <Link
-        href="#"
+        target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdk21aY6OYbuCLXGT0hnuRzqEPGLL9D0Xixc-nNdFfxYzd2dg/viewform"
         className="bg-brand text-white hover:bg-blue-600 font-body text-xl py-4 px-8 mb-12 rounded-md"
       >
         Start your application

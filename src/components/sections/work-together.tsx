@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 export default function WorkTogetherSection() {
@@ -17,21 +18,27 @@ export default function WorkTogetherSection() {
 
       {/* Button */}
       <div className="flex flex-col md:flex-row gap-4 justify-center mx-auto md:m-0">
-        <Button
-          size="lg"
-          className="bg-brand text-white hover:bg-gray-100 font-body text-xl py-6 hover:text-brand"
+        <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdk21aY6OYbuCLXGT0hnuRzqEPGLL9D0Xixc-nNdFfxYzd2dg/viewform"
         >
-          Submit a Project
-        </Button>
-        <Button
-          size="lg"
-          variant="outline"
-          className="border-white text-brand hover:border-gray-100 hover:bg-gray-100 hover:text-brand font-body text-xl py-6 border border-brand"
-        >
-          Join as a Trades Pro
-        </Button>
-      </div>
+          <Button
+            size="lg"
+            className="bg-brand text-white hover:bg-gray-100 font-body text-xl py-6 hover:text-brand"
+          >
+            Submit a Project
+          </Button>
+        </Link>
 
+        <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdk21aY6OYbuCLXGT0hnuRzqEPGLL9D0Xixc-nNdFfxYzd2dg/viewform"
+        >
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-white text-brand hover:border-gray-100 hover:bg-gray-100 hover:text-brand font-body text-xl py-6 border border-brand"
+          >
+            Join as a Trades Pro
+          </Button>
+        </Link>
+      </div>
     </section>
   );
 }

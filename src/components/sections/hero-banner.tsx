@@ -4,6 +4,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Navbar from "./navbar";
+import Link from "next/link";
 
 export default function HeroBanner() {
   return (
@@ -14,7 +15,7 @@ export default function HeroBanner() {
         backgroundImage: "url('/iStock-1714802084.jpg",
       }}
     >
-      {/* bg-gray-400/60 --> using as overlay for hero image */} 
+      {/* bg-gray-400/60 --> using as overlay for hero image */}
       <div className="absolute inset-0 bg-gray-600/30" />{" "}
       <Navbar />
 
@@ -33,19 +34,27 @@ export default function HeroBanner() {
             Powered by AI
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <Button
-              size="lg"
-              className="bg-brand text-white hover:text-brand hover:bg-gray-100 font-heading2 text-xl py-8 px-10"
+            <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdk21aY6OYbuCLXGT0hnuRzqEPGLL9D0Xixc-nNdFfxYzd2dg/viewform"
             >
-              Submit a Project
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-brand font-heading2 text-xl py-8 px-10"
+              <Button
+                size="lg"
+                className="bg-brand text-white hover:text-brand hover:bg-gray-100 font-heading2 text-xl py-8 px-10"
+              >
+                Submit a Project
+              </Button>
+            </Link>
+
+            <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdk21aY6OYbuCLXGT0hnuRzqEPGLL9D0Xixc-nNdFfxYzd2dg/viewform"
             >
-              Join as a Trades Pro
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-gray-700 hover:border-gray-100 hover:bg-gray-100 hover:text-brand font-heading2 text-xl py-8 px-10"
+              >
+                Join as a Trades Pro
+              </Button>
+            </Link>
+
           </div>
         </motion.div>
 
