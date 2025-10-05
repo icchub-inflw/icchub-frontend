@@ -1,2 +1,11 @@
 [build.environment]
   NODE_VERSION = "20"
+
+[build]
+  # Build command: first generate _headers using env vars, then build Next.js
+  command = "node scripts/generate-headers.mjs && next build"
+  publish = ".next"
+
+# Optional: only apply password protection to Deploy Previews
+[context.deploy-preview]
+  command = "node scripts/generate-headers.mjs && next build"
